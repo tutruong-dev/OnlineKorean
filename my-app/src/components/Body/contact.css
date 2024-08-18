@@ -1,0 +1,82 @@
+.body_Contact{
+    display: flex;
+    flex: 1;
+  }
+  .sideBar, .mainContent{
+    display: flex;
+  }
+  .sideBar{
+    padding: 20px;
+    justify-content: center;
+    flex: 1;
+    margin: 7px 0px 10px;
+    width: 20px;
+  }
+  .mainContent{
+    flex: 3;
+    margin: 7px 10px 10px;
+    font-size: 22px;
+  }
+
+  .sideBar img {
+    width: 180px;
+    height: 180px;
+   margin-top: 60px;
+  }
+
+  .mainContent h2 {
+    display: flex;
+    margin: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form-group {
+    display: flex;
+    margin: 60px -220px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 500px;
+  }
+  
+  .form-group textarea {
+    resize: none;
+    height: 100px;
+    margin-top: -30px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group label {
+    font-size: 20px;
+    margin-left: 5px;
+    
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: -180px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
