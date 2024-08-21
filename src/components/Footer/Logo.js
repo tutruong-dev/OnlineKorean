@@ -6,7 +6,7 @@ function Logo() {
   return (
     <div className="footer-logo">
         <div className="logo-container">
-      <a href="index" className="logo-link"> {/* Sử dụng liên kết để bao bọc logo và tên thương hiệu */}
+      <a href="/Home-Page" className="logo-link"> {/* Sửa thành trang Home */}
         <img src={logo} alt="LogoFooter" className="logo-image" />
         <span className="brand">Online Korean</span>
       </a>

@@ -11,7 +11,7 @@ const App = () => (
   <Router>
     <Header />
     <Routes>
-      <Route path="/Trang-Chủ" element={<HomePage />} />
+      <Route path="/Home-Page" element={<HomePage />} />
       <Route path="/shopping-cart" element={<ShoppingCartPage />} />
       {/* Bạn có thể thêm các route khác ở đây */}
     </Routes>

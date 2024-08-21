@@ -63,13 +63,13 @@ function Header() {
     <header>
       <nav className="navbar">
         <div className="logo-container">
-          <Link to="/" className="logo-link"> 
+          <Link to="/Home-Page" className="logo-link"> 
             <img src={logo} alt="Logo" className="logo-image" />
             <span className="brand">Online Korean</span>
           </Link>
         </div>
         <div className="nav-links">
-          <Link to="/Trang-Chủ" className="nav-link">Trang Chủ</Link>
+          <Link to="/Home-Page" className="nav-link">Trang Chủ</Link>
           <Link to="/Khóa-Học" className="nav-link">Khóa Học</Link>
           <Link to="/Test-Đầu-Vào" className="nav-link">Test Đầu Vào</Link>
           <Link to="/Blog" className="nav-link">Blog</Link>
