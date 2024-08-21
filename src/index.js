@@ -13,7 +13,7 @@ const App = () => (
     <Routes>
       <Route path="/Home-Page" element={<HomePage />} />
       <Route path="/shopping-cart" element={<ShoppingCartPage />} />
-      {/* Bạn có thể thêm các route khác ở đây */}
+      {/* có thể thêm các route khác ở đây */}
     </Routes>
     <Footer />
   </Router>
