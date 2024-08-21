@@ -1,0 +1,104 @@
+.course-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; 
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.course-video {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.course-title {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.course-info span {
+  display: flex;
+  align-items: center;
+}
+
+.icon-clock::before {
+  content: "\f017"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.icon-graduation-cap::before {
+  content: "\f19d"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+  border-top: 1px solid #ddd;
+  padding-top: 10px; 
+}
+
+.course-details span {
+  display: flex;
+  align-items: center;
+}
+
+.icon-star::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #FFD700; 
+  margin-right: 5px;
+}
+
+.icon-person::before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.course-more-info {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.course-more-info:hover {
+  text-decoration: underline;
+}

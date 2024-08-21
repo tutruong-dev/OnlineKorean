@@ -1,0 +1,29 @@
+.statistical-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto; 
+  max-width: 1200px; 
+}
+
+.statistical-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 214px;
+  margin: 10px;
+  color: #2D4FFF;
+  background-color: #fff;
+}
+
+.statistical-number {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.statistical-text {
+  font-size: 1.2em;
+  margin: 0;
+}

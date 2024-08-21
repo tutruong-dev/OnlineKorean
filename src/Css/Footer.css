@@ -1,0 +1,106 @@
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  flex: 1; 
+}
+.footer-logo img {
+  height: 70px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer-frame {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-frame h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-frame ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.footer-frame ul li {
+  margin-bottom: 5px;
+}
+
+.footer-frame ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-frame ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.footer-icons i {
+  font-size: 24px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.footer-copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-to-top button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top button:hover {
+  background-color: #0056b3;
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+}

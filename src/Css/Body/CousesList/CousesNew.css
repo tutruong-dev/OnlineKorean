@@ -1,0 +1,77 @@
+.courseNew-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Center the course cards within the view */
+  }
+  
+  .courseNew-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Fixed width for course cards */
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text inside card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+  }
+  
+  .courseNew-card:hover {
+    transform: translateY(-10px); /* Lift up the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .courseNew-video {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .courseNew-title {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+  
+  .courseNew-title-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .courseNew-title-link:hover {
+    text-decoration: underline;
+  }
+  
+  .courseNew-details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #333;
+  }
+  
+  .courseNew-date {
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* Remove right margin for better alignment */
+  }
+  
+  .courseNew-date::before {
+    content: "\f133"; /* Unicode for calendar icon in FontAwesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  
+  .courseNew-info-text {
+    font-size: 0.9em;
+    color: #333;
+    margin-top: 14px;
+    text-align: center;
+  }
+  

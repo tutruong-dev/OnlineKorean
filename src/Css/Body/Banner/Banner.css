@@ -1,0 +1,42 @@
+.banner {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 20px;
+  background: url('../../../Img/Banner/Banner1.png') no-repeat center center;
+  background-size: cover; 
+  color: black;
+  margin: 0 auto; 
+  max-width: 1050px; 
+  height: 250px; 
+  border-radius: 20px;
+  position: relative; 
+}
+
+.banner-content {
+  max-width: 40%;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.banner-content p {
+  text-align: justify;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.explore-link {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px; 
+}

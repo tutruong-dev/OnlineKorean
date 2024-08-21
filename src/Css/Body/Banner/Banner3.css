@@ -1,0 +1,55 @@
+.Banner3-container {
+    display: flex;
+    justify-content: space-between; /* Phân bổ không gian đều giữa các phần tử */
+    align-items: center;
+    padding: 20px;
+    background: url('../../../Img/Banner/Banner3.png') no-repeat center center;
+    background-size: cover;
+    color: black;
+    margin: 0 auto;
+    max-width: 1050px;
+    height: 150px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .Banner3-content {
+    display: flex; /* Sắp xếp các phần tử con theo hàng ngang */
+    align-items: center; /* Căn giữa các phần tử dọc theo chiều cao */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    max-width: 100%; /* Đảm bảo nội dung không chiếm quá nhiều không gian */
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .Banner3-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .Banner3-text {
+    font-size: 30px; /* Cỡ chữ cho tiêu đề */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+  }
+  
+  .Banner3-links {
+    display: flex; /* Xếp các liên kết theo hàng ngang */
+    gap: 15px; /* Khoảng cách giữa các liên kết */
+    margin-left: 250px;
+  }
+  
+  .Banner3-link {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Banner3-link:hover {
+    background-color: darkblue; /* Màu nền khi hover */
+  }
+  

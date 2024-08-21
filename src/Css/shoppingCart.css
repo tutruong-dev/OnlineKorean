@@ -1,0 +1,235 @@
+.shoppingCart-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+}
+
+.shoppingCart-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shoppingCart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shoppingCart-item {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+.course-image-container {
+  width: 300px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.course-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-author {
+  font-size: 13px;
+  color: #666;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0;
+  margin-right: 200px;
+}
+
+.course-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.course-info-item {
+  font-size: 13px;
+  color: #666;
+}
+
+.course-price {
+  display: flex;
+  align-items: baseline;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+.new-price {
+  font-weight: bold;
+  color: #28a745;
+  font-size: 18px;
+}
+
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.more-info-button {
+  color: black;
+  font-size: 14px;
+  margin-top: 150px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.quantity-button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #999;
+  margin-left: 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination-button {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 8px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.pagination-button.active,
+.pagination-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.checkout-section {
+  margin-top: 30px;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-code {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 200px;
+}
+
+.discount-input {
+  width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: black;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+.total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.price {
+  color: #28a745;
+}
+
+.checkout-button {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  color: black;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+
+.checkout-button svg {
+  margin-left: 10px;
+}

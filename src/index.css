@@ -1,13 +1,14 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "Css/Header.css";
+@import "Css/Footer.css";
+@import "Css/Body/Banner/HeroBanner.css";
+@import "Css/Body/Teacher/Header.css";
+@import "Css/Body/Teacher/Teacher.css";
+@import "Css/Body/Banner/Banner.css";
+@import "Css/Body/FeedBack.css";
+@import"Css/Body/CousesList/Couses.css";
+@import "Css/Body/Banner/Banner2.css";
+@import "Css/Body/Statistical.css";
+@import "Css/Body/Banner/Banner3.css";
+@import"Css/Body/CousesList/CousesNew.css";
+@import "Css/shoppingCart.css";
