@@ -1,0 +1,95 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #E0E0E0;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+  }
+  
+  .navbar-menu a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navbar-menu a:hover {
+    color: #FF0000; /* Màu đỏ khi hover */
+  }
+
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon, .cart-icon {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .search-icon:hover, .cart-icon:hover {
+    color: #FF0000; /* Màu đỏ khi hover */
+  }
+  
+  .login-btn, .register-btn {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    background-color: transparent;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .login-btn:hover, .register-btn:hover {
+    background-color: #FF0000; /* Màu đỏ khi hover */
+    color: white;
+  }
+  
+  .register-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+  }
+  
+  .register-btn:hover {
+    background-color: #FF0000; /* Màu đỏ khi hover */
+  }
+  
