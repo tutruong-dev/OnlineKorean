@@ -1,0 +1,42 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4A90E2;
+    width: 1920px;
+    height: 72px;
+}
+.MenuList a {
+    margin: 0 15px;
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.MenuList{
+    display: flex;
+    justify-content: space-between;
+}
+.Logo img{
+    height: 70px;
+    width: 70px;
+}
+.Logo a{
+    font-family: 'Exo';
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: bold; 
+    color: black;
+}
+.ButtonFunc a{
+    color: #4A90E2;
+}
+.Button-Login{
+    display: flex;
+    justify-content: space-between  ;
+}

@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:"Poppins", "sans-serif";
+    
+}
+.container{
+    position: relative;
+    width: 100vw; /* Chiều rộng 100% màn hình */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+}
+.linkpath{
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.login-content{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.body{
+    width: 100%;
+    height: 689px;
+}
+.login-content-logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-content-logo{
+    align-items: center;
+    font-family: 'Exo';
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: bold; 
+    color: black;
+
+}
+.login-content-form{
+    
+    width: 50%;
+}
+.login-content-logo img{
+    width: 336px;
+    height: 336px;
+}
+
+.login-content-form-out{
+    display: flex;
+    flex-direction: column;
+}
+.login-content-form-out img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.login-content-form-out button{
+    border: 2px solid transparent; /* Viền trong suốt */
+    padding: 10px 30px; /* Khoảng cách giữa nội dung và biên nút */
+    border-radius: 8px; /* Bo góc */
+    background-color: white;
+}
+.footer{
+    width: 100%;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.ForgetPass{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
