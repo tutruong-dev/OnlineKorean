@@ -3,6 +3,7 @@ import Header from "./Header";
 import './FAOs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Footer from "./Footer";
 
 function FAOs()
 {
@@ -79,7 +80,7 @@ function FAOs()
                 </div>
             </div>
             <div className="footer">
-                <a>Chờ components</a>
+                <Footer/>
             </div>
         </div>
     );

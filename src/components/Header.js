@@ -1,6 +1,5 @@
 import React from "react";
 import './Header.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header()
 {
@@ -21,8 +20,8 @@ function Header()
                 <a href="">Liên Hệ Chúng Tôi</a>
             </div>
             <div className="ButtonFunc">
-                <a href=""><FontAwesomeIcon icon="fa-solid fa-cart-shopping" /></a>
-                <a href=""><FontAwesomeIcon icon="fa-solid fa-magnifying-glass" /></a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 <div class="d-grid gap-2 col-6 mx-auto" className="Button-Login">
                     <button type="button" class="btn btn-outline-primary">Đăng nhập</button>
                     <button type="button" class="btn btn-primary">Đăng ký</button>

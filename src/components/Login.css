@@ -32,6 +32,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.linkpath a{
+    text-decoration: none;
+    color: black;
+}
 .login-content{
     background-color: white;
     display: flex;
@@ -79,14 +83,6 @@
     padding: 10px 30px; /* Khoảng cách giữa nội dung và biên nút */
     border-radius: 8px; /* Bo góc */
     background-color: white;
-}
-.footer{
-    width: 100%;
-    height: 512px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: whitesmoke;
 }
 .ForgetPass{
     margin-top: 10px;

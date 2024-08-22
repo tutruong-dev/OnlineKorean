@@ -14,6 +14,9 @@
     text-decoration: none;
     font-size: 16px;
 }
+.MenuList a:hover{
+    color: #FF782D;
+}
 
 .nav-links a:hover {
     text-decoration: underline;
@@ -33,10 +36,22 @@
     font-weight: bold; 
     color: black;
 }
+.ButtonFunc{
+    display: flex;
+    justify-content: space-between;
+    width: 316px;
+    height: 48px;
+    align-items: center;
+}
+.ButtonFunc i{
+    color: #4A90E2;
+}
+.ButtonFunc i:hover{
+    color: #FF782D;
+}
 .ButtonFunc a{
     color: #4A90E2;
 }
-.Button-Login{
-    display: flex;
-    justify-content: space-between  ;
+.ButtonFunc button{
+    margin-left: 10px;
 }

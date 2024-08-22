@@ -4,6 +4,7 @@ import Header from "./Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import ForgetPass from "./ForgetPass";
+import Footer from "./Footer";
 
 function Login()
 {
@@ -57,8 +58,7 @@ function Login()
                                         class="form-check-input" 
                                         id="exampleCheck1"
                                         />
-                                    <label class="form-check-label" for="exampleCheck1">Lưu mật khẩu</label>
-                                    
+                                    <label class="form-check-label" for="exampleCheck1">Lưu mật khẩu</label>                                    
                                 </div>                                
                                 <button type="submit" class="btn btn-primary">Đăng nhập</button>
                                 <div className="ForgetPass">
@@ -70,7 +70,7 @@ function Login()
                 </div>
             </div>
             <div className="footer">
-                <a>Đợi components Footer</a>
+                <Footer/>
             </div>
         </div>
     );
