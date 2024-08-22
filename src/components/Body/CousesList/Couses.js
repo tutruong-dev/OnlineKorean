@@ -55,7 +55,7 @@ const Course = () => {
               <i className="icon-person"></i> {course.instructor}
             </span>
           </div>
-          <a href="/xem-them" className="course-more-info">Xem thêm</a>
+          <a href="/xem-them" className="course-more-info">Xem thêm</a>{/* Cập nhật href Toi Trang Khóa Học */}
         </div>
       ))}
     </div>

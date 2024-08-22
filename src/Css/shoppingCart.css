@@ -3,8 +3,8 @@
   margin: 0 auto;
   padding: 30px;
   border-radius: 8px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  background-color: #FFFFFF;
+  border: 1px solid #E0E0E0;
 }
 
 .shoppingCart-heading {
@@ -26,7 +26,7 @@
 .shoppingCart-item {
   display: flex;
   padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #E0E0E0;
   align-items: center;
 }
 
@@ -89,7 +89,7 @@
 
 .new-price {
   font-weight: bold;
-  color: #28a745;
+  color: #28A745;
   font-size: 18px;
 }
 
@@ -117,15 +117,15 @@
 .quantity-input {
   width: 40px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid #CCC;
   border-radius: 5px;
   margin: 0 10px;
   padding: 5px;
 }
 
 .quantity-button {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color: #F0F0F0;
+  border: 1px solid #CCC;
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;
@@ -149,7 +149,7 @@
 }
 
 .pagination-button {
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -161,13 +161,13 @@
 
 .pagination-button.active,
 .pagination-button:hover {
-  background-color: #007bff;
+  background-color: #007BFF;
   color: white;
 }
 
 .checkout-section {
   margin-top: 30px;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #E0E0E0;
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
@@ -184,13 +184,13 @@
 .discount-input {
   width: 150px;
   padding: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #CCC;
   border-radius: 5px;
   font-size: 14px;
 }
 
 .apply-button {
-  background-color: #007bff;
+  background-color: #007BFF;
   color: black;
   padding: 8px 20px;
   border: none;
@@ -200,7 +200,7 @@
 }
 
 .apply-button:hover {
-  background-color: #0056b3;
+  background-color: #0056B3;
 }
 
 .total-price {
@@ -210,13 +210,14 @@
 }
 
 .price {
-  color: #28a745;
+  color: #28A745;
 }
 
 .checkout-button {
   display: flex;
   align-items: center;
-  background-color: #007bff;
+  text-decoration: none;
+  background-color: #007BFF;
   color: black;
   padding: 15px 30px;
   border: none;
@@ -227,7 +228,7 @@
 }
 
 .checkout-button:hover {
-  background-color: #0056b3;
+  background-color: #0056B3;
 }
 
 .checkout-button svg {

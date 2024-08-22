@@ -23,7 +23,7 @@ const TeacherList = () => {
                 {'☆'.repeat(5 - teacher.reviews)}
               </div>
               <p className="review-text">Đánh Giá</p>
-              <a href='xem-them' className="more-info-link">Xem Thêm</a>
+              <a href='xem-them' className="more-info-link">Xem Thêm</a> {/* Cập nhật href Toi Trang Thông tin của Giáo viên */}
             </div>
           </div>
         ))}

@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ShoppingCartPage from './pages/ShoppingCartPage';
+import PaymentPage from './pages/PaymentPage';
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
     <Routes>
       <Route path="/Home-Page" element={<HomePage />} />
       <Route path="/shopping-cart" element={<ShoppingCartPage />} />
+      <Route path="/Payment" element={<PaymentPage />} />
       {/* có thể thêm các route khác ở đây */}
     </Routes>
     <Footer />

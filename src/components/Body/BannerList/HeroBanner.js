@@ -11,8 +11,8 @@ const HeroBanner = () => {
                   người.Trải nghiệm khóa học được đề xuất phù hợp mong muốn
                   và kiến thức một cách cá nhân hóa</p>
               <div className="cta-buttons">
-                  <a href="/dang-ky-hoc">Tham Gia Khóa Học</a> 
-                  <a href="/xem-bai-giang">Xem Videos Demo Miễn Phí</a>
+                  <a href="/dang-ky-hoc">Tham Gia Khóa Học</a> {/* Cập nhật href Toi Trang Khóa Học */}
+                  <a href="/xem-bai-giang">Xem Videos Demo Miễn Phí</a>{/* Cập nhật href Toi Trang Khóa Học Miễn Phí */} 
               </div>
           </div>
       </div>

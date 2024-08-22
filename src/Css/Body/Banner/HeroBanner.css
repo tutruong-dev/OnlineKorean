@@ -4,7 +4,7 @@
   justify-content: center;
   background: url('../../../Img/Banner/HeroBannerImg.png') no-repeat center;
   background-size: cover;
-  color: white;
+  color: black;
   padding: 50px 20px;
   height: 450px;
   width: 100%;
@@ -13,25 +13,26 @@
 
 .hero-content {
   flex: 1;
-  max-width: 400px; 
+  max-width: 400px;
   border-radius: 10px;
-  color: black;
+  color: #2C2C2C;
   text-align: justify;
   margin-right: 720px;
-
 }
-
 .hero-banner h1 {
   font-size: 2.5em;
   margin: 0;
+  color: black;
 }
 
 .hero-banner p {
   font-size: 1.2em;
   margin: 20px 0;
+  color: #333333;
 }
 
 .cta-buttons {
+  font-size: 0.85em;
   display: flex;
   justify-content: center;
   margin-top: 30px;
@@ -41,9 +42,14 @@
   text-decoration: none;
   color: black;
   background: #4A90E2;
-  padding: 10px 20px;
+  width: 200px;
+  padding: 10px 25px;
   border-radius: 30px;
   margin: 0 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: background 0.3s;
 }
 

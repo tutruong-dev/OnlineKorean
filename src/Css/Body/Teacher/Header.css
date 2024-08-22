@@ -18,8 +18,8 @@
 }
 
 .all-teachers-link {
-  color: white;
-  background-color: #007bff;
+  color: black; 
+  background-color: #4A90E2;
   border: none;
   text-decoration: none;
   padding: 10px 20px;
@@ -32,5 +32,5 @@
 }
 
 .all-teachers-link:hover {
-  background-color: #0056b3;
+  background-color: #2E71B8;
 }

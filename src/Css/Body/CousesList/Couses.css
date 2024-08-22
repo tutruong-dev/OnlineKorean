@@ -12,33 +12,39 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 300px; 
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
+
 .course-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .course-video {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
 .course-title {
   font-size: 1.5em;
   margin: 0 0 10px 0;
-  text-align: center;
+ 
+  color: #2C2C2C;
 }
 
 .course-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Phân bổ đều các phần tử */
   width: 100%;
   margin-bottom: 15px;
   font-size: 0.9em;
+  color: #666666;
 }
 
 .course-info span {
@@ -51,6 +57,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 5px;
+  color: #4A90E2;
 }
 
 .icon-graduation-cap::before {
@@ -58,6 +65,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 5px;
+  color: #4A90E2; 
 }
 
 .course-details {
@@ -66,8 +74,9 @@
   width: 100%;
   margin-bottom: 15px;
   font-size: 0.9em;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd; 
   padding-top: 10px; 
+  color: #666666;
 }
 
 .course-details span {
@@ -79,7 +88,7 @@
   content: "\f005";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #FFD700; 
+  color: #FFD700;
   margin-right: 5px;
 }
 
@@ -88,10 +97,11 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 5px;
+  color: #4A90E2; 
 }
 
 .course-more-info {
-  color: #007bff;
+  color: #007bff; 
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;

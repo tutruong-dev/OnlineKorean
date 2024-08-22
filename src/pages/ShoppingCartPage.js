@@ -1,11 +1,9 @@
-import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer'; 
+import React from 'react'; 
 import CousesShop from '../components/ShoppingCart/CousesShop';
 
 const ShoppingCart = () => {
     return (
-      <div className="home-page">
+      <div className="shoppingcart-page">
         <CousesShop />
       </div>
     );

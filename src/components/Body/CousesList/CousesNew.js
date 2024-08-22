@@ -36,11 +36,10 @@ const CousesNew = () => {
       </h3>
       <div className="courseNew-details">
         <span className="courseNew-date">
-          {/* Biểu tượng ngày tháng sẽ xuất hiện ở đây */}
           {course.date}
         </span>
       </div>
-      <p className="courseNew-info-text">Bạn đang tìm khóa học {course.title}?</p>
+      <p className="courseNew-info-text">Bạn đang tìm khóa học {course.title}?</p> 
     </div>
   ))}
 </div>

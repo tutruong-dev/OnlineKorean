@@ -19,13 +19,14 @@
   border-radius: 10px;
   max-width: 400px;
   margin-left: 20px;
-  background-color: #fff; 
+  background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .banner2-content h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  color: #2C2C2C;
 }
 
 .banner2-content ul {
@@ -39,16 +40,18 @@
   font-size: 18px;
   display: flex;
   align-items: center;
+  color: #2D4FFF;
 }
 
 .banner2-content ul li i {
   margin-right: 10px;
-  color: #28a745; 
+  color: #2ECC71;
 }
+
 .discover-link {
   text-decoration: none;
-  background-color: #007bff;
-  color: white;
+  background-color: #4A90E2;
+  color: black;
   border: none;
   padding: 10px 20px;
   border-radius: 50px;
@@ -59,5 +62,5 @@
 }
 
 .discover-link:hover {
-  background-color: #0056b3;
+  background-color: #50A5F7;
 }

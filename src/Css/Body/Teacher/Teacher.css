@@ -8,7 +8,7 @@
 .teacher-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px; /* Increased gap between cards */
+  gap: 30px;
   justify-content: center;
   max-width: 100%;
 }
@@ -18,10 +18,10 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 280px; /* Increased width of the cards */
+  width: 280px; 
   text-align: center;
-  padding: 25px; /* Increased padding */
-  background-color: #fff;
+  padding: 25px;
+  background-color: #ffffff; 
   box-sizing: border-box; 
 }
 
@@ -32,14 +32,15 @@
 }
 
 .teacher-card h2 {
-  font-size: 1.6em; /* Slightly larger font size */
-  margin: 15px 0; /* Increased margin */
+  font-size: 1.6em; 
+  margin: 15px 0; 
+  color: Black; 
 }
 
 .teacher-card p {
   margin: 15px 0;
-  color: black;
-  font-size: 1.1em; /* Slightly larger font size */
+  color: #2C2C2C;
+  font-size: 1.1em; 
 }
 
 .review-section {
@@ -47,38 +48,40 @@
   align-items: center;
   justify-content: center; 
   gap: 5px; 
-  margin: 15px 15px; /* Increased margin */
-  font-size: 0.8em; /* Slightly larger font size */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
-  width: 100%; /* Ensure the section spans the width of the card */
+  margin: 15px 15px; 
+  font-size: 0.8em; 
+  white-space: nowrap;
+  width: 100%;
 }
 
 .reviews {
-  font-size: 1.5em; /* Slightly larger star size */
+  font-size: 1.5em; 
   color: #FFD700; 
 }
 
 .review-text { 
-  color: black;
-  margin-top: 5px; /* Adjust this value as needed */
+  color: #2C2C2C;
+  margin-top: 5px; 
 }
+
 .more-info-link {
   display: inline-block;
   border: none;
-  color: blue;
-  padding: 12px 24px; /* Increased padding */
+  color: #4A90E2; 
+  padding: 12px 24px;
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1em; /* Slightly larger font size */
-  margin-top: 15px; /* Increased margin */
-  width: 100%; /* Ensure the link spans the width of the card */
-  text-align: center; /* Center the text within the link */
-  white-space: nowrap; /* Prevent text from wrapping to the next line */
+  font-size: 1em;
+  margin-top: 15px; 
+  width: 100%; 
+  text-align: center;
+  white-space: nowrap; 
 }
 
 .more-info-link:hover {
   text-decoration: underline;
+  color: #2E71B8;
 }
 
 @media (max-width: 1024px) {
@@ -115,7 +118,7 @@
   }
 
   .teacher-cards {
-    gap: 20px; /* Increased gap between cards */
+    gap: 20px; 
   }
 
   .review-section {

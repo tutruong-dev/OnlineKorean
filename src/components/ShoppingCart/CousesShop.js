@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../index.css';
 import shoppingCartImg from '../../Img/shoppingCartImg.png';
+import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
 const CousesShop = () => {
@@ -70,9 +71,9 @@ const CousesShop = () => {
         </div>
         <div className="total-price">
           <p>Tổng Tiền: <span className="price">${totalAmount.toLocaleString()}</span></p>
-          <button className="checkout-button">
+          <Link to="/Payment" className="checkout-button">
             ${totalAmount.toLocaleString()} Thanh toán Ngay <FaArrowRight />
-          </button>
+            </Link>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ function Scroll() {
 
   return (
     <div className="scroll-to-top" onClick={scrollToTop}>
-      <i className="fas fa-arrow-up"></i> {/* Icon mũi tên lên */}
+      <i className="fas fa-arrow-up"></i> 
     </div>
   );
 }
