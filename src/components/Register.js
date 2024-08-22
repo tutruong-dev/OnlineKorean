@@ -14,8 +14,12 @@ function Register()
             </div>
             <div className="body">
                 <div className="linkpath">
-                        <a>Trang chủ</a>
-                        <a>Đăng nhập/đăng ký</a>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Đăng nhập/ Đăng kí</li>
+                        </ol>
+                    </nav>
                 </div>
                 <div className="register-content">
                     <div className="register-content-logo">

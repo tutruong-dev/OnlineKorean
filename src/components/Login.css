@@ -22,6 +22,7 @@
     flex-direction: row;
 }
 .linkpath{
+    --bs-breadcrumb-divider: '>';
     width: 100%;
     height: 60px;
     background-color: whitesmoke;
@@ -51,6 +52,7 @@
     font-family: 'Exo';
     text-decoration: none; /* Loại bỏ gạch chân */
     font-weight: bold; 
+    font-size: 28px;
     color: black;
 
 }

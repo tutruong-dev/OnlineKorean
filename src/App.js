@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login';
 import Register from './components/Register';
+import FAOs from './components/FAOs';
 
 function App() {
     return (
@@ -21,8 +22,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    //<Login />
-    <Register />
+    <Login />
+    //<Register />
+    //<FAOs />
     );
 }
 
