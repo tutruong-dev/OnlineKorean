@@ -6,6 +6,8 @@ import Button1 from "./Button1";
 import PropTypes from "prop-types";
 import "./DETAIL.css";
 import component2_14 from "../../Img/Courses/component-2-14.svg";
+import icon_1 from "../../Img/Courses/icon1.svg";
+
 const DETAIL = ({ className = "" }) => {
   return (
     <div className={`detail ${className}`}>
@@ -85,7 +87,7 @@ const DETAIL = ({ className = "" }) => {
               propWidth="19px"
               propTextTransform1="unset"
               propFontWeight1="unset"
-              icon="/icon1.svg"
+              icon={icon_1}
               cate4Gap="4px"
               cate4Flex="unset"
               cate4MinWidth="unset"

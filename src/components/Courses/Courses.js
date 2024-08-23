@@ -1,5 +1,6 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Courses.css";
 import component_2 from "../../Img/Courses/component-2.svg";
 
@@ -19,6 +20,7 @@ const Courses = ({
   propDisplay1,
   propAlignSelf1,
   propWidth1,
+  id, // Add an ID prop to identify the course
 }) => {
   const frameDivStyle = useMemo(() => {
     return {
@@ -52,7 +54,7 @@ const Courses = ({
   }, [propMinWidth1, propDisplay1, propAlignSelf1, propWidth1]);
 
   return (
-    <div className={`courses1 ${className}`}>
+    <Link to={`/course/${id}`} className={`courses1 ${className}`}>
       <div className="image">
         <img className="image-child" alt="" src={rectangle139} />
         <div className="photography-wrapper" style={frameDivStyle}>
@@ -95,7 +97,7 @@ const Courses = ({
           <div className="view-more">{`Xem Thêm   `}</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -104,6 +106,7 @@ Courses.propTypes = {
   rectangle139: PropTypes.string,
   photography: PropTypes.string,
   prop: PropTypes.string,
+  id: PropTypes.string.isRequired, // ID is required
 
   /** Style props */
   propHeight: PropTypes.any,
