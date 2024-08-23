@@ -32,15 +32,15 @@ const TestInput = () => {
 
   const calculateResults = () => {
     let topik = 0;
-    const totalQuestions = questions.length; // 10 câu hỏi
+    const totalQuestions = questions.length;
     const numParts = 2; // 2 phần
-    const questionsPerPart = totalQuestions / numParts; // 5 câu hỏi mỗi phần
+    const questionsPerPart = totalQuestions / numParts;
     let correctCounts = Array(numParts).fill(0);
     let totalCounts = Array(numParts).fill(0);
   
     questions.forEach(q => {
-      const partIndex = Math.floor((q.id - 1) / questionsPerPart); // Chia phần
-      console.log(`Question ID: ${q.id}, Answer: ${answers[q.id]}, Correct Answer: ${q.correctAnswer}`); // Debugging
+      const partIndex = Math.floor((q.id - 1) / questionsPerPart);
+      console.log(`Question ID: ${q.id}, Answer: ${answers[q.id]}, Correct Answer: ${q.correctAnswer}`); 
   
       if (answers[q.id] === q.correctAnswer) {
         correctCounts[partIndex]++;
@@ -50,7 +50,7 @@ const TestInput = () => {
   
     for (let i = 0; i < numParts; i++) {
       const percentage = (correctCounts[i] / totalCounts[i]) * 100;
-      console.log(`Part ${i + 1}: ${correctCounts[i]} correct out of ${totalCounts[i]} total - Percentage: ${percentage}%`); // Debugging
+      console.log(`Part ${i + 1}: ${correctCounts[i]} correct out of ${totalCounts[i]} total - Percentage: ${percentage}%`);
       if (percentage >= 60) {
         topik++;
       }

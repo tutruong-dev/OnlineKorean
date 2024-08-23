@@ -1,0 +1,86 @@
+.create-course-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #F9FAFB;
+    min-height: 100vh; /* Đảm bảo trang phủ toàn bộ chiều cao của viewport */
+}
+
+.create-course-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: space-between; /* Đẩy nút xuống dưới cùng */
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 900px; /* Cải thiện kích thước tối đa */
+    width: 100%;
+    min-height: 500px; /* Đảm bảo chiều cao tối thiểu của container */
+}
+
+.create-course-title {
+    font-size: 30px; /* Tăng kích thước tiêu đề */
+    font-weight: bold;
+    color: #2C2C2C;
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+    text-align: center;
+}
+
+.create-course-form {
+    flex: 1; /* Đảm bảo form chiếm không gian còn lại */
+    width: 100%;
+}
+
+.create-course-form input,
+.create-course-form textarea,
+.create-course-form select {
+    width: 100%;
+    padding: 14px; /* Tăng khoảng cách padding cho các trường nhập */
+    margin-bottom: 20px;
+    border: 1px solid #BDC3C7;
+    border-radius: 8px; /* Cải thiện bo góc */
+    font-size: 16px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.create-course-form input:focus,
+.create-course-form textarea:focus,
+.create-course-form select:focus {
+    border-color: #4A90E2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.create-course-form textarea {
+    resize: vertical;
+    min-height: 120px; /* Tăng chiều cao tối thiểu của textarea */
+}
+
+.create-course-button {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 18px; /* Tăng kích thước chữ cho nút */
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; /* Cải thiện bo góc */
+    cursor: pointer;
+    max-width: 100%; /* Đặt chiều rộng tối đa cho nút */
+    width: 100%; /* Đặt chiều rộng của nút về kích thước của container */
+    margin-top: 20px; /* Tăng khoảng cách trên nút */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm hiệu ứng thu phóng khi nhấn */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung nút */
+}
+
+.create-course-button:hover {
+    background-color: #50A5F7;
+}
+
+.create-course-button:active {
+    background-color: #2E71B8;
+    transform: scale(0.98); /* Hiệu ứng nhấn nút */
+}

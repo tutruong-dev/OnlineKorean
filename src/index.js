@@ -17,6 +17,7 @@ import Surveys from './components/Survey';
 import CourseListing from "./pages/CourseListing";
 import TestInputPage from './pages/TestInputPage';
 import QuestionForm from './components/CreateQuestion/CreateQuestion';
+import CreateCoursePage from './components/CreateCouses/CreateCouses';
 // import Blog from './pages/BlogPage';
 
 const App = () => (
@@ -40,8 +41,7 @@ const App = () => (
       <Route path="/Khóa-Học" element={<CourseListing />} />
       <Route path="/TestInput" element={<TestInputPage />} />
       <Route path="/Teacher" element={<QuestionForm />} />
-     {/*<Route path="//Kiểm Tra Trình Độ" element={<Registe />} />
-      {/* có thể thêm các route khác ở đây */}
+      <Route path="/Tất Cả Giáo Viên" element={<CreateCoursePage />} />
     </Routes>
     <Footer />
   </Router>
