@@ -10,11 +10,18 @@ import FAQsPages from './pages/FAQsPage';
 import LoginPages from './pages/LoginPage';
 import ForgetPass from './components/Login_Logout/ForgetPass';
 import RegisterPage from './pages/RegisterPage';
+<<<<<<< HEAD
 import TestPages from './pages/TestPage';
 import ContactPages from './pages/ContactPage';
 import Surveys from './components/Survey';
 // import CourseSingle from "./pages/CourseSingle";
 import CourseListing from "./pages/CourseListing";
+=======
+import TestInputPage from './pages/TestInputPage';
+import Blog from './pages/BlogPage';
+
+
+>>>>>>> 97d16f74e8b02ac165943473e4c27429f8853b9a
 const App = () => (
   <Router>
     <Header />
@@ -25,8 +32,8 @@ const App = () => (
       <Route path="/FAQs" element={<FAQsPages />} />
       <Route path="/Đăng-Nhập" element={<LoginPages />} />
       <Route path="/ForgetPass" element={<ForgetPass />} />
-      <Route path="/Login" element={<LoginPages />} />
       <Route path="/Đăng-Ký" element={<RegisterPage />} />
+<<<<<<< HEAD
       <Route path="/Login" element={<LoginPages />} />
       <Route path="/Register" element={<RegisterPage />} />
       <Route path="/Test-Đầu-Vào" element={<TestPages />} />
@@ -34,6 +41,12 @@ const App = () => (
       <Route path="/Kiểm Tra Trình Độ" element={<Surveys />} />
       <Route path="/Khóa-Học" element={<CourseListing />} />
      {/*<Route path="//Kiểm Tra Trình Độ" element={<Registe />} />
+=======
+      <Route path='/TestInputPage' element={<TestInputPage />} />
+      <Route path='/Blog' element={<Blog />} />
+     {/*<Route path="/Đăng-Ký" element={<Registe />} />
+      <Route path="/Đăng-Nhập" element={<Login />} />
+>>>>>>> 97d16f74e8b02ac165943473e4c27429f8853b9a
       {/* có thể thêm các route khác ở đây */}
     </Routes>
     <Footer />

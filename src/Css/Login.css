@@ -145,3 +145,39 @@
     margin-top: 10px;
     text-decoration: none;
 }
+
+/* Code linkpath */
+
+.linkpath {
+    margin: 20px 0;  /* Adjust the margin as needed */
+    padding: 10px;
+    background-color: #f8f9fa;  /* Light background for breadcrumb area */
+    border-radius: 5px;
+}
+
+.breadcrumb {
+    list-style: none;  /* Remove default list style */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Use flexbox for layout */
+}
+
+.breadcrumb-item {
+    margin-right: 10px;  /* Spacing between breadcrumb items */
+    font-size: 14px;     /* Font size for breadcrumb items */
+    color: #007bff;      /* Blue color for links */
+}
+
+.breadcrumb-item a {
+    text-decoration: none;  /* Remove underline from links */
+    color: #007bff;         /* Link color */
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+}
+
+.breadcrumb-item.active a {
+    color: #6c757d;  /* Gray color for active items */
+    pointer-events: none;  /* Disable clicking on the active link */
+}

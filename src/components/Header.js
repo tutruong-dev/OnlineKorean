@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import logo from '../Img/logo.jpg';
 import "../index.css";
 
+
 function Header() {
   // State để quản lý hiển thị/ẩn menu
   const [showMenu, setShowMenu] = useState(false);
@@ -71,7 +72,7 @@ function Header() {
         <div className="nav-links">
           <Link to="/Home-Page" className="nav-link">Trang Chủ</Link>
           <Link to="/Khóa-Học" className="nav-link">Khóa Học</Link>
-          <Link to="/Test-Đầu-Vào" className="nav-link">Test Đầu Vào</Link>
+          <Link to="/TestInputPage" className="nav-link">Test Đầu Vào</Link>
           <Link to="/Blog" className="nav-link">Blog</Link>
           <Link to="/FAQs" className="nav-link">FAQs</Link>
           <Link to="/Liên-Hệ-Với-Chúng-Tôi" className="nav-link">Liên Hệ Chúng Tôi</Link>

@@ -15,13 +15,12 @@ function Payment() {
   });
 
   const [errors, setErrors] = useState({});
-  const [bankAccountLengths, setBankAccountLengths] = useState({
+  const bankAccountLengths = {
     MB: 13,
     VCB: 12,
     ACB: 8,
     NganhangKhac: 14,
-  });
-
+  };
 
   const cartTotal = 500000; 
   const discountCode = formData.discountCode;
@@ -40,7 +39,7 @@ function Payment() {
       newErrors.email = "Email không hợp lệ";
     }
 
-  //account number validation
+    // Account number validation
     const selectedBankLength = bankAccountLengths[formData.bank];
     if (formData.bank && !formData.bankAccount.match(`^\\d{${selectedBankLength}}$`)) {
       newErrors.bankAccount = `Số tài khoản không hợp lệ`;
