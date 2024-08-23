@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import PropTypes from "prop-types";
 import "./Courses.css";
+import component_2 from "../../Img/Courses/component-2.svg";
 
 const Courses = ({
   className = "",
@@ -68,27 +69,19 @@ const Courses = ({
         <div className="meta">
           <div className="times">
             <div className="component-2-wrapper">
-              <img
-                className="component-2-icon2"
-                alt=""
-                src="/component-21.svg"
-              />
+              <img className="component-2-icon2" alt="" src={component_2} />
             </div>
             <div className="home">2 Tuần</div>
             <div className="home1">Home</div>
-            <img className="icon6" alt="" src="/component-2.svg" />
+            <img className="icon6" alt="" src={component_2} />
           </div>
           <div className="times">
             <div className="component-2-wrapper">
-              <img
-                className="component-2-icon2"
-                alt=""
-                src="/component-2-1.svg"
-              />
+              <img className="component-2-icon2" alt="" src={component_2} />
             </div>
             <div className="home2">156 Học viên</div>
             <div className="home1">Home</div>
-            <img className="icon6" alt="" src="/component-2.svg" />
+            <img className="icon6" alt="" src={component_2} />
           </div>
         </div>
         <div className="line" />

@@ -5,7 +5,7 @@ import Cate from "./Cate";
 import Button1 from "./Button1";
 import PropTypes from "prop-types";
 import "./DETAIL.css";
-
+import component2_14 from "../../Img/Courses/component-2-14.svg";
 const DETAIL = ({ className = "" }) => {
   return (
     <div className={`detail ${className}`}>
@@ -68,7 +68,7 @@ const DETAIL = ({ className = "" }) => {
               propAlignSelf="unset"
               propBackgroundColor="unset"
               propPadding="0px 460px 0px 0px"
-              component2="/component-2-14.svg"
+              component2={component2_14}
               showComponent2Icon
               home="Lưu thông tin cho những lần bình luận tiếp theo"
               propFlex="unset"

@@ -1,15 +1,14 @@
-
 import TopHeading from "../components/Courses/TopHeading";
 import Courses from "../components/Courses/Courses";
 import Pagination from "../components/Courses/Pagination";
 import SidebarCoursesListing from "../components/Courses/SidebarCoursesListing";
 
 import "./CourseListing.css";
-import rectangle139_2x from '../Img/Courses/rectangle-139@2x.png';
+import "../../src/components/Courses/global.css";
+import rectangle139_2x from "../Img/Courses/rectangle-139@2x.png";
 const CourseListing = () => {
   return (
     <div className="course-listing-2">
-    
       <section className="page-body">
         <div className="course-listings">
           <div className="listing-content">
@@ -17,7 +16,6 @@ const CourseListing = () => {
             <div className="courses">
               <div className="course-items">
                 <Courses
-                
                   rectangle139={rectangle139_2x}
                   propHeight="unset"
                   propWidth="unset"
@@ -89,7 +87,7 @@ const CourseListing = () => {
                   rectangle139={rectangle139_2x}
                   propHeight="40px"
                   propWidth="24px"
-                  photography="        "
+                  photography="Nghe"
                   propDisplay="unset"
                   propMinWidth="unset"
                   propAlignSelf="stretch"
@@ -115,7 +113,7 @@ const CourseListing = () => {
           <SidebarCoursesListing />
         </div>
       </section>
-    
+
       <div className="course-listing-2-child" />
     </div>
   );

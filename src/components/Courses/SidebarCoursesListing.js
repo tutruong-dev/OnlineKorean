@@ -2,7 +2,11 @@ import CATEGORY from "./CATEGORY";
 import Option1 from "./Option1";
 import PropTypes from "prop-types";
 import "./SidebarCoursesListing.css";
-
+import component_2_14 from "../../Img/Courses//component-2-14.svg";
+import component_2_16 from "../../Img/Courses//component-2-16.svg";
+import component_3 from "../../Img/Courses//component-3.svg";
+import component_7_1 from "../../Img/Courses//component-7-1.svg";
+import icon1 from "../../Img/Courses//icon1.svg";
 const SidebarCoursesListing = ({ className = "" }) => {
   return (
     <div className={`sidebar-courses-listing ${className}`}>
@@ -10,10 +14,10 @@ const SidebarCoursesListing = ({ className = "" }) => {
         courseCategory="Danh Mục Khóa Học"
         propDisplay="unset"
         propMinWidth="unset"
-        component2="/component-2-14.svg"
-        component21="/component-2-14.svg"
-        component22="/component-2-16.svg"
-        component23="/component-2-14.svg"
+        component2={component_2_14}
+        component21={component_2_14}
+        component22={component_2_16}
+        component23={component_2_14}
         home="Nghe"
         home1="Nói"
         home2="Viết"
@@ -22,10 +26,10 @@ const SidebarCoursesListing = ({ className = "" }) => {
         home12="15"
         home13="15"
         home14="15"
-        icon="/icon1.svg"
-        icon1="/icon1.svg"
-        icon2="/icon1.svg"
-        icon3="/icon1.svg"
+        icon={icon1}
+        icon1={icon1}
+        icon2={icon1}
+        icon3={icon1}
         showComponent2Icon
         showComponent2Icon1
         showComponent2Icon2
@@ -115,14 +119,14 @@ const SidebarCoursesListing = ({ className = "" }) => {
         courseCategory="Người Giảng Dạy"
         propDisplay="unset"
         propMinWidth="unset"
-        component2="/component-2-14.svg"
-        component21="/component-2-14.svg"
+        component2={component_2_14}
+        component21={component_2_14}
         home="Trần Ly Ly"
         home1="Hà Hiếu"
         home11="15"
         home12="15"
-        icon="/icon1.svg"
-        icon1="/icon1.svg"
+        icon={icon1}
+        icon1={icon1}
         showComponent2Icon
         showComponent2Icon1
         showHome
@@ -170,18 +174,18 @@ const SidebarCoursesListing = ({ className = "" }) => {
         courseCategory="Giá"
         propDisplay="inline-block"
         propMinWidth="30px"
-        component2="/component-2-16.svg"
-        component21="/component-2-14.svg"
-        component22="/component-2-14.svg"
+        component2={component_2_16}
+        component21={component_2_14}
+        component22={component_2_14}
         home="Tất cả"
         home1="Miễn Phí"
         home2="Trả Phí"
         home11="15"
         home12="15"
         home13="15"
-        icon="/icon1.svg"
-        icon1="/icon1.svg"
-        icon2="/icon1.svg"
+        icon={icon1}
+        icon1={icon1}
+        icon2={icon1}
         showComponent2Icon
         showComponent2Icon1
         showComponent2Icon2
@@ -250,57 +254,57 @@ const SidebarCoursesListing = ({ className = "" }) => {
         <div className="nh-gi">Đánh giá</div>
         <div className="star-rating">
           <Option1
-            component2="/component-2-14.svg"
-            component4="/component-3.svg"
-            component5="/component-3.svg"
-            component6="/component-3.svg"
-            component7="/component-3.svg"
+            component2={component_2_14}
+            component4={component_3}
+            component5={component_3}
+            component6={component_3}
+            component7={component_3}
             prop="5.0"
             propWidth="27px"
           />
           <Option1
-            component2="/component-2-16.svg"
-            component4="/component-3.svg"
-            component5="/component-3.svg"
-            component6="/component-3.svg"
-            component7="/component-7-1.svg"
+            component2={component_2_16}
+            component4={component_3}
+            component5={component_3}
+            component6={component_3}
+            component7={component_7_1}
             prop={`4.0 & Up`}
             propWidth="72px"
           />
           <Option1
-            component2="/component-2-14.svg"
-            component4="/component-3.svg"
-            component5="/component-3.svg"
-            component6="/component-7-1.svg"
-            component7="/component-7-1.svg"
+            component2={component_2_14}
+            component4={component_3}
+            component5={component_3}
+            component6={component_7_1}
+            component7={component_7_1}
             prop={`3.0 & Up`}
             propWidth="71px"
           />
           <Option1
-            component2="/component-2-14.svg"
-            component4="/component-3.svg"
-            component5="/component-7-1.svg"
-            component6="/component-7-1.svg"
-            component7="/component-7-1.svg"
+            component2={component_2_14}
+            component4={component_3}
+            component5={component_7_1}
+            component6={component_7_1}
+            component7={component_7_1}
             prop={`2.0 & Up`}
             propWidth="71px"
           />
           <Option1
-            component2="/component-2-14.svg"
-            component4="/component-7-1.svg"
-            component5="/component-7-1.svg"
-            component6="/component-7-1.svg"
-            component7="/component-7-1.svg"
+            component2={component_2_14}
+            component4={component_7_1}
+            component5={component_7_1}
+            component6={component_7_1}
+            component7={component_7_1}
             prop={`1.0 & Up`}
           />
         </div>
       </div>
       <CATEGORY
         courseCategory="Cấp độ"
-        component2="/component-2-14.svg"
-        component21="/component-2-14.svg"
-        component22="/component-2-16.svg"
-        component23="/component-2-14.svg"
+        component2={component_2_14}
+        component21={component_2_14}
+        component22={component_2_16}
+        component23={component_2_14}
         home="Tất Cả Cấp Độ"
         home1="Người Mới Bắt Đầu"
         home2="Trung Cấp"
@@ -309,10 +313,10 @@ const SidebarCoursesListing = ({ className = "" }) => {
         home12="15"
         home13="15"
         home14="15"
-        icon="/icon1.svg"
-        icon1="/icon1.svg"
-        icon2="/icon1.svg"
-        icon3="/icon1.svg"
+        icon={icon1}
+        icon1={icon1}
+        icon2={icon1}
+        icon3={icon1}
         showComponent2Icon
         showComponent2Icon1
         showComponent2Icon2

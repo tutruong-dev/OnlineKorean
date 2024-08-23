@@ -1,7 +1,11 @@
 import Cate from "./Cate";
 import PropTypes from "prop-types";
 import "./Meta.css";
-
+import component_21 from "../../Img/Courses/component-21.svg";
+import component_2 from "../../Img/Courses/component-2.svg";
+import component_2_5 from "../../Img/Courses//component-2-5.svg";
+import component_2_4 from "../../Img/Courses//component-2-4.svg";
+import component_2_3 from "../../Img/Courses//component-2-3.svg";
 const Meta = ({ className = "" }) => {
   return (
     <div className={`meta1 ${className}`}>
@@ -9,7 +13,7 @@ const Meta = ({ className = "" }) => {
         propAlignSelf="unset"
         propBackgroundColor="unset"
         propPadding="unset"
-        component2="/component-21.svg"
+        component2={component_21}
         showComponent2Icon
         home="2 Tuần"
         propFlex="unset"
@@ -26,7 +30,7 @@ const Meta = ({ className = "" }) => {
         propWidth="50px"
         propTextTransform1="capitalize"
         propFontWeight1="500"
-        icon="/component-2.svg"
+        icon={component_2}
         cate4Gap="8px"
         cate4Flex="unset"
         cate4MinWidth="unset"
@@ -36,7 +40,7 @@ const Meta = ({ className = "" }) => {
         propAlignSelf="unset"
         propBackgroundColor="unset"
         propPadding="unset"
-        component2="/component-2-1.svg"
+        component2={component_21}
         showComponent2Icon
         home="156 Học viên"
         propFlex="unset"
@@ -53,7 +57,7 @@ const Meta = ({ className = "" }) => {
         propWidth="50px"
         propTextTransform1="capitalize"
         propFontWeight1="500"
-        icon="/component-2.svg"
+        icon={component_2}
         cate4Gap="8px"
         cate4Flex="1"
         cate4MinWidth="75px"
@@ -63,7 +67,7 @@ const Meta = ({ className = "" }) => {
         propAlignSelf="unset"
         propBackgroundColor="unset"
         propPadding="unset"
-        component2="/component-2-3.svg"
+        component2={component_2_3}
         showComponent2Icon
         home="Tất cả trình độ"
         propFlex="unset"
@@ -80,7 +84,7 @@ const Meta = ({ className = "" }) => {
         propWidth="50px"
         propTextTransform1="capitalize"
         propFontWeight1="500"
-        icon="/component-2.svg"
+        icon={component_2}
         cate4Gap="8px"
         cate4Flex="1"
         cate4MinWidth="81px"
@@ -90,7 +94,7 @@ const Meta = ({ className = "" }) => {
         propAlignSelf="unset"
         propBackgroundColor="unset"
         propPadding="unset"
-        component2="/component-2-4.svg"
+        component2={component_2_4}
         showComponent2Icon
         home="20 Bài học  "
         propFlex="unset"
@@ -107,7 +111,7 @@ const Meta = ({ className = "" }) => {
         propWidth="50px"
         propTextTransform1="capitalize"
         propFontWeight1="500"
-        icon="/component-2.svg"
+        icon={component_2}
         cate4Gap="8px"
         cate4Flex="unset"
         cate4MinWidth="unset"
@@ -117,7 +121,7 @@ const Meta = ({ className = "" }) => {
         propAlignSelf="unset"
         propBackgroundColor="unset"
         propPadding="unset"
-        component2="/component-2-5.svg"
+        component2={component_2_5}
         showComponent2Icon
         home="3 Bài tập"
         propFlex="unset"
@@ -134,7 +138,7 @@ const Meta = ({ className = "" }) => {
         propWidth="50px"
         propTextTransform1="capitalize"
         propFontWeight1="500"
-        icon="/component-2.svg"
+        icon={component_2}
         cate4Gap="8px"
         cate4Flex="unset"
         cate4MinWidth="unset"

@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import PropTypes from "prop-types";
 import "./Option1.css";
-
+import component_3 from "../../Img/Courses//component-3.svg";
 const Option1 = ({
   className = "",
   component2,
@@ -22,7 +22,7 @@ const Option1 = ({
     <div className={`option-5 ${className}`}>
       <img className="component-2-icon5" alt="" src={component2} />
       <div className="star">
-        <img className="component-3-icon" alt="" src="/component-3.svg" />
+        <img className="component-3-icon" alt="" src={component_3} />
         <img className="component-3-icon" alt="" src={component4} />
         <img className="component-3-icon" alt="" src={component5} />
         <img className="component-3-icon" alt="" src={component6} />
