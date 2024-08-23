@@ -10,8 +10,10 @@ import FAQsPages from './pages/FAQsPage';
 import LoginPages from './pages/LoginPage';
 import ForgetPass from './components/Login_Logout/ForgetPass';
 import RegisterPage from './pages/RegisterPage';
-import TestInput from './pages/TestInputPage';
+import TestInputPage from './pages/TestInputPage';
 import Blog from './pages/BlogPage';
+
+
 const App = () => (
   <Router>
     <Header />
@@ -22,11 +24,8 @@ const App = () => (
       <Route path="/FAQs" element={<FAQsPages />} />
       <Route path="/Đăng-Nhập" element={<LoginPages />} />
       <Route path="/ForgetPass" element={<ForgetPass />} />
-      <Route path="/Login" element={<LoginPages />} />
       <Route path="/Đăng-Ký" element={<RegisterPage />} />
-      <Route path="/Login" element={<LoginPages />} />
-      <Route path="/Register" element={<RegisterPage />} />
-      <Route path='/TestInput' element={<TestInput />} />
+      <Route path='/TestInputPage' element={<TestInputPage />} />
       <Route path='/Blog' element={<Blog />} />
      {/*<Route path="/Đăng-Ký" element={<Registe />} />
       <Route path="/Đăng-Nhập" element={<Login />} />

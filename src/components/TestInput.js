@@ -1,11 +1,10 @@
 import React from "react";
-//import "./Css/TestInput.css"
 
 const TestInput = () => {
     return(
-        <div className="survey-container">
-            <h1>Survey Khảo Sát</h1>
-            <div className="questions">
+        <div className="input-survey-container">
+            <h1>Bài test đầu vào</h1>
+            <div className="test-questions">
                 <h3>1. Thông tin cá nhân </h3>
                 <input type="email" placeholder="Email" />
 
@@ -269,7 +268,7 @@ const TestInput = () => {
                         </label>
                     </div>
                 </div>
-                <button className="button-container">Hoàn Thành Khảo Sát</button>
+                <button className="testinput-button-container">Hoàn Thành Khảo Sát</button>
 
             </div>
         </div>

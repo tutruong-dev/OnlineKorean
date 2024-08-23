@@ -56,7 +56,7 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
   background-color: #ECF0F1;
-  color: #2E71B8;
+  color:coral ;
 }
 
 .cart-button {
@@ -95,6 +95,7 @@ body {
 
 .cart-menu a:hover {
   text-decoration: underline;
+  color:coral ;
 }
 
 .search-container {
@@ -160,12 +161,14 @@ body {
 .login{
   text-decoration: none;
   font-size: 20px; 
+  margin-right: 10px;
 }
 .Register{
   background: #4A90E2;
   text-decoration: none; 
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 20px;
+  color: white;
 }
 .Login a:hover{
   color:coral ;
