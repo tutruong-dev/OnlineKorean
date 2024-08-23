@@ -53,7 +53,7 @@
   }
   
   .right-container img {
-    max-width: 250px; /* Adjusts the image size */
+    max-width: 250px; 
     height: auto;
     border-radius: 8px;
     margin-left: 10px;
@@ -116,8 +116,8 @@
   }
   
   .skill-img {
-    width: 65px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
-    height: 65px; /* Điều chỉnh kích thước ảnh theo nhu cầu */
+    width: 65px; 
+    height: 65px; 
     display: block;
     margin: 0 auto 10px auto;
   }
