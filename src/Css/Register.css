@@ -82,6 +82,16 @@
     margin-bottom: 20px;
     width: 50%;
 }
+.register-content-form-content input[type="email"],
+.register-content-form-content input[type="password"],
+.register-content-form-content input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
 
 /* Form fields styles */
 .form-label {

@@ -78,8 +78,8 @@ function Register() {
                         <img src={logo} alt="logo" />
                         <a>OnlineKorean</a>
                     </div>
-                    <div className="login-content-form">
-                        <div className="login-content-form-content">
+                    <div className="register-content-form">
+                        <div className="register-content-form-content">
                             <h1>Đăng Ký</h1>
                             <form onSubmit={handleSubmit}>
                                 <div className="mb-3">
