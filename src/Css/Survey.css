@@ -48,8 +48,9 @@
     padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
+    text-decoration: none;
     margin: 20px auto; /* Center the button and add margin above and below */
     display: block; /* Ensure the button takes full width of the container */
     max-width: 200px; /* Limit the maximum width of the button */
