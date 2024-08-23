@@ -14,17 +14,6 @@
     flex-direction: column;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    background-color: aquamarine;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: row;
-}
-
 
 .linkpath {
     --bs-breadcrumb-divider: '>';
