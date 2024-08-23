@@ -1,0 +1,57 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4A90E2;
+    width: 1920px;
+    height: 72px;
+}
+.MenuList a {
+    margin: 0 15px;
+    color: #4A90E2;
+    text-decoration: none;
+    font-size: 16px;
+}
+.MenuList a:hover{
+    color: #FF782D;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.MenuList{
+    display: flex;
+    justify-content: space-between;
+}
+.Logo img{
+    height: 70px;
+    width: 70px;
+}
+.Logo a{
+    font-family: 'Exo';
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: bold; 
+    color: black;
+}
+.ButtonFunc{
+    display: flex;
+    justify-content: space-between;
+    width: 316px;
+    height: 48px;
+    align-items: center;
+}
+.ButtonFunc i{
+    color: #4A90E2;
+}
+.ButtonFunc i:hover{
+    color: #FF782D;
+}
+.ButtonFunc a{
+    color: #4A90E2;
+}
+.ButtonFunc button{
+    margin-left: 10px;
+}
