@@ -23,9 +23,9 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Login />
+    //<Login />
     //<Register />
-    //<FAOs />
+    <FAOs />
     //<Survey/>
     );
 }

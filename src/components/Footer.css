@@ -1,5 +1,5 @@
 .Footer{
-    width: 100%;
+    width: 100vw;
     height: 512px;
     display: flex;
     justify-content: space-around;
@@ -74,4 +74,5 @@ li{
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    width: 100%;
 }

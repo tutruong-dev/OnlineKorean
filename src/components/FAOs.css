@@ -11,6 +11,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 .header-content{
     display: flex;
@@ -100,4 +101,10 @@
 .FAOs-content-main-dropdown:hover .FAOs-content-main-dropdown-button{
     background-color: whitesmoke;
     color: #FF782D;
+}
+.footer{
+    text-align: left;
+}
+.FAOs-content-image img{
+
 }

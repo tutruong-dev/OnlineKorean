@@ -34,7 +34,7 @@ function FAOs()
                                 <div class="FAOs-content-main-dropdown">
                                     <button className="FAOs-content-main-dropdown-button">Có diễn đàn hoặc nhóm học tập để trao đổi không?</button>
                                     <div className="FAOs-content-main-dropdown-button-content">
-                                        <p>Nội dung2</p>
+                                        <p>Hoàn toàn có ạ! Chúng tôi rất chú trọng đến việc tạo ra một cộng đồng học tập sôi động và hỗ trợ lẫn nhau. Khi tham gia khóa học tại trung tâm, bạn sẽ được mời vào các diễn đàn của trung tâm, các kênh chat của những lớp học mà bạn sẽ tham gia. Việc tham gia vào cộng đồng học tập này không chỉ giúp bạn nâng cao hiệu quả học tập mà còn giúp bạn làm quen và kết nối với nhiều người bạn cùng sở thích.</p>
                                     </div>  
                                 </div>
                                 <div class="FAOs-content-main-dropdown">
@@ -76,6 +76,9 @@ function FAOs()
                             </div>    
                         </div>
                         </div> 
+                    </div>
+                    <div className="FAOs-content-image">
+                        <img src="/FAOs-img.png"></img>
                     </div>
                 </div>
             </div>
