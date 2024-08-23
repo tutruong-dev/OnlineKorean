@@ -1,0 +1,103 @@
+.main-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-item:hover {
+  transform: scale(1.02);
+}
+
+.course-item::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* Tỷ lệ khung hình 16:9 */
+  background-size: cover;
+  background-position: center;
+}
+
+.course-info {
+  background-color: rgb(245, 237, 237);
+  padding: 15px;
+  text-align: left;
+}
+
+.course-info h3 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.course-info i {
+  color: #999;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  color: #FF0000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}
+  
