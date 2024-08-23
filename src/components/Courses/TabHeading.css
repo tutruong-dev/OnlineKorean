@@ -1,3 +1,4 @@
+/* Styles cho .tng-quan */
 .tng-quan {
   position: relative;
   line-height: 120%;
@@ -5,7 +6,17 @@
   font-weight: 600;
   display: inline-block;
   min-width: 101px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
+
+/* Hiệu ứng khi hover vào .tng-quan */
+.tng-quan:hover {
+  color: var(--primary-color); /* Thay đổi màu chữ khi hover */
+  transform: scale(1.1); /* Phóng to nhẹ chữ khi hover */
+  cursor: pointer; /* Thay đổi con trỏ chuột thành hình bàn tay để chỉ ra rằng phần tử có thể nhấp được */
+}
+
+/* Styles cho .tab-header-items */
 .tab-header-items {
   border-radius: var(--br-xl) 0 0 0;
   background-color: var(--white-grey);
@@ -18,15 +29,27 @@
   justify-content: center;
   padding: var(--padding-lg) var(--padding-15xl);
   white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+/* Hiệu ứng khi hover vào .tab-header-items */
+.tab-header-items:hover {
+  background-color: var(--light-blue); /* Thay đổi màu nền khi hover */
+  transform: translateY(-5px); /* Di chuyển card lên một chút khi hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ để tăng chiều sâu */
+}
+
+/* Styles cho .line1 */
 .line1 {
   align-self: stretch;
   width: 1px;
   position: relative;
   background-color: var(--light-grey);
   flex-shrink: 0;
-  display: none;
+  display: block; /* Đảm bảo dòng phân cách hiển thị */
 }
+
+/* Styles cho .tab-heading */
 .tab-heading {
   border-radius: var(--br-xl) var(--br-xl) 0 0;
   border: 1px solid var(--light-grey);
@@ -39,4 +62,11 @@
   font-size: var(--heading-h4-size);
   color: var(--color-cornflowerblue);
   font-family: var(--heading-h4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hiệu ứng khi hover vào .tab-heading */
+.tab-heading:hover {
+  background-color: var(--light-grey); /* Thay đổi màu nền khi hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ rõ ràng hơn để nổi bật */
 }
