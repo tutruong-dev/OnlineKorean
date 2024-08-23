@@ -9,7 +9,7 @@ const Banner = () => {
         <p>Khoa học tiếng Hàn với trình độ cơ bản đến nâng cao, đáp ứng nhu cầu học tập của mọi người.
           Trải nghiệm khóa học được đề xuất phù hợp mong muốn của mọi người.</p>
       </div>
-      <a href="/khoa-hoc" className="explore-link">Khám Phá Khóa Học</a> {/* Cập nhật href Tới TRang Khóa Học */}
+      <a href="/Khóa-Học" className="explore-link">Khám Phá Khóa Học</a> {/* Cập nhật href Tới TRang Khóa Học */}
     </div>
   );
 };

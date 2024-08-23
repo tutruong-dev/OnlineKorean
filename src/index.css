@@ -10,10 +10,10 @@
 @import "Css/Body/Banner/Banner2.css";
 @import "Css/Body/Statistical.css";
 @import "Css/Body/Banner/Banner3.css";
+@import "Css/Footer.css";
 @import"Css/Body/CousesList/CousesNew.css";
 @import "Css/shoppingCart.css";
 @import "Css/Payment.css";
-@import "Css/FAQs.css";
 @import "Css/Login.css";
 @import "Css/Register.css";
 @import "Css/ForgetPass.css";
@@ -23,3 +23,5 @@
 @import "Css/Opening_Test.css";
 @import "Css/breakcrumb.css";
 @import "Css/Survey.css";
+@import "Css/contact.css";
+@import "Css/CreateQuestion/CreateQuestion.css"

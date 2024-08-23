@@ -1,280 +1,200 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Survey = () => {
-    return(
+    const [email, setEmail] = useState("");
+    const [reasons, setReasons] = useState([]);
+    const [time, setTime] = useState("");
+    const [listening, setListening] = useState("");
+    const [speaking, setSpeaking] = useState("");
+    const [reading, setReading] = useState("");
+    const [writing, setWriting] = useState("");
+    const [focus, setFocus] = useState([]);
+    const [errors, setErrors] = useState({});
+    const navigate = useNavigate();
+
+    const handleCheckboxChange = (setFunction, value) => {
+        setFunction(prev => 
+            prev.includes(value) ? prev.filter(item => item !== value) : [...prev, value]
+        );
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let formErrors = {};
+
+        if (!email) {
+            formErrors.email = "Vui lòng nhập Email.";
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            formErrors.email = "Email không hợp lệ.";
+        }
+        if (reasons.length === 0) formErrors.reasons = "Vui lòng chọn ít nhất một lý do.";
+        if (!time) formErrors.time = "Vui lòng chọn một lựa chọn.";
+        if (!listening) formErrors.listening = "Vui lòng chọn một lựa chọn.";
+        if (!speaking) formErrors.speaking = "Vui lòng chọn một lựa chọn.";
+        if (!reading) formErrors.reading = "Vui lòng chọn một lựa chọn.";
+        if (!writing) formErrors.writing = "Vui lòng chọn một lựa chọn.";
+        if (focus.length === 0) formErrors.focus = "Vui lòng chọn ít nhất một lựa chọn.";
+
+        setErrors(formErrors);
+
+        if (Object.keys(formErrors).length === 0) {
+            console.log("Form is valid. Proceed with submission.");
+            navigate("/TestInput");
+        }
+    };
+
+    return (
         <div className="survey-container">
             <h1>Survey Khảo Sát</h1>
             <div className="questions">
-                <h3>1. Thông tin cá nhân </h3>
-                <input type="email" placeholder="Email" />
-
-                <h3>2. Bạn học tiếng Hàn vì mục tiêu gì? (Có thể chọn nhiều lựa chọn) </h3>
+                <h3>1. Thông tin cá nhân</h3>
+                <input
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                        style={errors.email ? { borderColor: "red" } : {}}/>
+{errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
+                <h3>2. Bạn học tiếng Hàn vì mục tiêu gì? (Có thể chọn nhiều lựa chọn)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="study" />
-                            Du Học
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="work" />
-                            Làm Việc
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="travel" />
-                            Du Lịch
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="marriage" />
-                            Kết Hôn Với Người Hàn
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="hobby" />
-                            Sở Thích Cá Nhân
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-1" value="other" />
-                            Lý Do Khác
-                        </label>
-                    </div>
+                    {["Du Học", "Làm Việc", "Du Lịch", "Kết Hôn Với Người Hàn", "Sở Thích Cá Nhân", "Lý Do Khác"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="question-1"
+                                    value={label}
+                                    onChange={() => handleCheckboxChange(setReasons, label)}
+                                    style={errors.reasons ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.reasons && <p style={{ color: "red" }}>{errors.reasons}</p>}
 
-                <input type="reason" placeholder="Vui lòng ghi rõ lý do khác" />
+                <input type="text" placeholder="Vui lòng ghi rõ lý do khác" />
 
-
-                <h3>3. Bạn từng học tiếng Hàn bao lâu rồi? (Chỉ chọn một lựa chọn) </h3>
+                <h3>3. Bạn từng học tiếng Hàn bao lâu rồi? (Chỉ chọn một lựa chọn)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-2" value="study" />
-                            Chưa từng học
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-<input type="radio" name="question-2" value="work" />
-                            Dưới 6 tháng
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-2" value="travel" />
-                           6 tháng - 1 năm
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="radio" name="question-2" value="marriage" />
-                            1 - 2 năm
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-2" value="hobby" />
-                            Trên 2 năm
-                        </label>
-                    </div>
+                    {["Chưa từng học", "Dưới 6 tháng", "6 tháng - 1 năm", "1 - 2 năm", "Trên 2 năm"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="question-2"
+                                    value={label}
+                                    onChange={(e) => setTime(e.target.value)}
+                                    style={errors.time ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.time && <p style={{ color: "red" }}>{errors.time}</p>}
 
-
-                <h3>4. Bạn tự đánh giá kỹ năng nghe của mình như thế nào? (Chỉ chọn 1 câu trả lời) </h3>
+                <h3>4. Bạn tự đánh giá kỹ năng nghe của mình như thế nào? (Chỉ chọn 1 câu trả lời)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-3" value="study" />
-                            Rất Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-3" value="work" />
-                            Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-3" value="travel" />
-                            Trung Bình
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="radio" name="question-3" value="marriage" />
-                            Kém
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-3" value="hobby" />
-                            Rất Kém
-                        </label>
-                    </div>
+                    {["Rất Tốt", "Tốt", "Trung Bình", "Kém", "Rất Kém"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="question-3"
+                                    value={label}
+                                    onChange={(e) => setListening(e.target.value)}
+                                    style={errors.listening ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.listening && <p style={{ color: "red" }}>{errors.listening}</p>}
 
-
-                <h3>5. Bạn tự đánh giá kỹ năng nói của mình như thế nào? (Chỉ chọn 1 câu trả lời) </h3>
+                <h3>5. Bạn tự đánh giá kỹ năng nói của mình như thế nào? (Chỉ chọn 1 câu trả lời)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-<div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-4" value="study" />
-                            Rất Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-4" value="work" />
-                            Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-4" value="travel" />
-                            Trung Bình
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="radio" name="question-4" value="marriage" />
-                            Kém
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-4" value="hobby" />
-                            Rất Kém
-                        </label>
-                    </div>
+                    {["Rất Tốt", "Tốt", "Trung Bình", "Kém", "Rất Kém"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="question-4"
+                                    value={label}
+                                    onChange={(e) => setSpeaking(e.target.value)}
+                                    style={errors.speaking ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.speaking && <p style={{ color: "red" }}>{errors.speaking}</p>}
 
-                <h3>6. Bạn tự đánh giá kỹ năng đọc của mình như thế nào? (Chỉ chọn 1 câu trả lời) </h3>
+                <h3>6. Bạn tự đánh giá kỹ năng đọc của mình như thế nào? (Chỉ chọn 1 câu trả lời)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-5" value="study" />
-                            Rất Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-5" value="work" />
-                            Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-5" value="travel" />
-                            Trung Bình
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="radio" name="question-5" value="marriage" />
-                            Kém
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-5" value="hobby" />
-Rất Kém
-                        </label>
-                    </div>
+                    {["Rất Tốt", "Tốt", "Trung Bình", "Kém", "Rất Kém"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="question-5"
+                                    value={label}
+                                    onChange={(e) => setReading(e.target.value)}
+                                    style={errors.reading ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.reading && <p style={{ color: "red" }}>{errors.reading}</p>}
 
-                <h3>7. Bạn tự đánh giá kỹ năng viết của mình như thế nào? (Chỉ chọn 1 câu trả lời) </h3>
+                <h3>7. Bạn tự đánh giá kỹ năng viết của mình như thế nào? (Chỉ chọn 1 câu trả lời)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-6" value="study" />
-                            Rất Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-6" value="work" />
-                            Tốt
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-6" value="travel" />
-                            Trung Bình
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-                            <input type="radio" name="question-6" value="marriage" />
-                            Kém
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="radio" name="question-6" value="hobby" />
-                            Rất Kém
-                        </label>
-                    </div>
+                    {["Rất Tốt", "Tốt", "Trung Bình", "Kém", "Rất Kém"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="question-6"
+                                    value={label}
+                                    onChange={(e) => setWriting(e.target.value)}
+                                    style={errors.writing ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                {errors.writing && <p style={{ color: "red" }}>{errors.writing}</p>}
 
-
-                <h3>8. Bạn mong muốn khóa học tập trung vào kỹ năng gì? (Có thể chọn nhiều lựa chọn) </h3>
+                <h3>8. Bạn mong muốn khóa học tập trung vào kỹ năng gì? (Có thể chọn nhiều lựa chọn)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="study" />
-                            Nghe
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="work" />
-                            Nói
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="travel" />
-                            Đọc
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px'}}>
-                        <label>
-<input type="checkbox" name="question-7" value="marriage" />
-                            Viết
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="hobby" />
-                            Ngữ Pháp
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="other" />
-                            Từ Vựng
-                        </label>
-                    </div>
-                    <div style={{ flex: '1 1 45%', margin: '5px' }}>
-                        <label>
-                            <input type="checkbox" name="question-7" value="other" />
-                            Văn Hóa Và Phong Tục Tiếng Hàn
-                        </label>
-                    </div>
+                    {["Nghe", "Nói", "Đọc", "Viết", "Ngữ Pháp", "Từ Vựng", "Văn Hóa Và Phong Tục Tiếng Hàn", "Kỹ Năng Khác"].map((label, index) => (
+                        <div key={index} style={{ flex: '1 1 45%', margin: '5px' }}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name="question-7"
+                                    value={label}
+                                    onChange={() => handleCheckboxChange(setFocus, label)}
+                                    style={errors.focus ? { borderColor: "red" } : {}}
+                                />
+                                {label}
+                            </label>
+                        </div>
+                    ))}
                 </div>
-
-                <button className="buttonSurvey-container">Hoàn Thành Khảo Sát</button>
-
+                {errors.focus && <p style={{ color: "red" }}>{errors.focus}</p>}
             </div>
+
+            <Link to="/TestInput" onClick={handleSubmit} className="buttonSurvey-container">Hoàn Thành Khảo Sát</Link>
         </div>
-    )
-}
+    );
+};
 
 export default Survey;

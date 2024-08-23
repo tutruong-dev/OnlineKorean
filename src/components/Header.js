@@ -59,7 +59,6 @@ function Header() {
     }
   };
 
-  // Header
   return (
     <header>
       <nav className="navbar">

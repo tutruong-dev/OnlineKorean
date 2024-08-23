@@ -146,38 +146,36 @@
     text-decoration: none;
 }
 
-/* Code linkpath */
-
 .linkpath {
-    margin: 20px 0;  /* Adjust the margin as needed */
+    margin: 20px 0;
     padding: 10px;
-    background-color: #f8f9fa;  /* Light background for breadcrumb area */
+    background-color: #f8f9fa;
     border-radius: 5px;
 }
 
 .breadcrumb {
-    list-style: none;  /* Remove default list style */
+    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;  /* Use flexbox for layout */
+    display: flex;
 }
 
 .breadcrumb-item {
-    margin-right: 10px;  /* Spacing between breadcrumb items */
-    font-size: 14px;     /* Font size for breadcrumb items */
-    color: #007bff;      /* Blue color for links */
+    margin-right: 10px;
+    font-size: 14px;
+    color: #007bff;
 }
 
 .breadcrumb-item a {
-    text-decoration: none;  /* Remove underline from links */
-    color: #007bff;         /* Link color */
+    text-decoration: none;
+    color: #007bff;
 }
 
 .breadcrumb-item a:hover {
-    text-decoration: underline;  /* Add underline on hover */
+    text-decoration: underline;
 }
 
 .breadcrumb-item.active a {
-    color: #6c757d;  /* Gray color for active items */
-    pointer-events: none;  /* Disable clicking on the active link */
+    color: #6c757d;
+    pointer-events: none;
 }
