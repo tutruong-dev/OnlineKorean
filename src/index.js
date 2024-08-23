@@ -15,7 +15,7 @@ import ContactPages from './pages/ContactPage';
 import Surveys from './components/Survey';
 // import CourseSingle from "./pages/CourseSingle";
 import CourseListing from "./pages/CourseListing";
-// import TestInputPage from './pages/TestInputPage';
+import TestInputPage from './pages/TestInputPage';
 // import Blog from './pages/BlogPage';
 
 const App = () => (
@@ -37,6 +37,8 @@ const App = () => (
       <Route path="/Liên-Hệ-Với-Chúng-Tôi" element={<ContactPages />} />
       <Route path="/Kiểm Tra Trình Độ" element={<Surveys />} />
       <Route path="/Khóa-Học" element={<CourseListing />} />
+      <Route path="/TestInput" element={<TestInputPage />} />
+      
      {/*<Route path="//Kiểm Tra Trình Độ" element={<Registe />} />
       {/* có thể thêm các route khác ở đây */}
     </Routes>
