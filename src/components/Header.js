@@ -104,9 +104,9 @@ function Header() {
         </button>
 
         <div class="d-grid gap-2 col-6 mx-auto" className="Login">
-                    <Link to="/Đăng-Ký" class="btn btn-outline-primary">Đăng nhập</Link>
-                    <Link to="/Đăng-Nhập" class="btn btn-primary">Đăng ký</Link>
-                </div>
+                    <Link to="/Đăng-Nhập" className='login'>Đăng nhập</Link>
+                    <Link to="/Đăng-Ký" className='Register'>Đăng ký</Link>
+        </div>
       </nav>
       {showMenu && (
         <div className="cart-menu">

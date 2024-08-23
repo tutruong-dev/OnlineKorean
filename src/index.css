@@ -13,6 +13,13 @@
 @import"Css/Body/CousesList/CousesNew.css";
 @import "Css/shoppingCart.css";
 @import "Css/Payment.css";
+<<<<<<< HEAD
 @import "Css/Blog.css";
 @import "Css/Sidebar.css";
 @import "Css/BlogPage.css"
+=======
+@import "Css/FAQs.css";
+@import "Css/Login.css";
+@import "Css/Register.css";
+@import "Css/ForgetPass.css"
+>>>>>>> 0ad7229e065bb60bc9222ee71ed9036479669d61
