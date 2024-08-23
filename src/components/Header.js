@@ -102,10 +102,11 @@ function Header() {
         <button className="cart-button" onClick={handleToggleMenu}>
           <i className="fa fa-shopping-cart"></i>
         </button>
-        <div className='Login'>
-          <Link to="/Đăng-Ký">Đăng Ký/</Link>
-          <Link to="/Đăng-Nhập">Đăng Nhập</Link>
-        </div>
+
+        <div class="d-grid gap-2 col-6 mx-auto" className="Login">
+                    <Link to="/Đăng-Ký" class="btn btn-outline-primary">Đăng nhập</Link>
+                    <Link to="/Đăng-Nhập" class="btn btn-primary">Đăng ký</Link>
+                </div>
       </nav>
       {showMenu && (
         <div className="cart-menu">

@@ -6,8 +6,6 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ShoppingCartPage from './pages/ShoppingCartPage';
 import PaymentPage from './pages/PaymentPage';
-
-
 const App = () => (
   <Router>
     <Header />
@@ -15,6 +13,8 @@ const App = () => (
       <Route path="/Home-Page" element={<HomePage />} />
       <Route path="/shopping-cart" element={<ShoppingCartPage />} />
       <Route path="/Payment" element={<PaymentPage />} />
+     {/*<Route path="/Đăng-Ký" element={<Registe />} />
+      <Route path="/Đăng-Nhập" element={<Login />} />
       {/* có thể thêm các route khác ở đây */}
     </Routes>
     <Footer />
