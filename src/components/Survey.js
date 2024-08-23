@@ -11,7 +11,7 @@ const Survey = () => {
     const [writing, setWriting] = useState("");
     const [focus, setFocus] = useState([]);
     const [errors, setErrors] = useState({});
-    const navigate = useNavigate(); // Replacing useHistory with useNavigate
+    const navigate = useNavigate();
 
     const handleCheckboxChange = (setFunction, value) => {
         setFunction(prev => 
@@ -20,10 +20,14 @@ const Survey = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent the default behavior of the link
+        e.preventDefault();
         let formErrors = {};
 
-        if (!email) formErrors.email = "Vui lòng nhập Email.";
+        if (!email) {
+            formErrors.email = "Vui lòng nhập Email.";
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            formErrors.email = "Email không hợp lệ.";
+        }
         if (reasons.length === 0) formErrors.reasons = "Vui lòng chọn ít nhất một lý do.";
         if (!time) formErrors.time = "Vui lòng chọn một lựa chọn.";
         if (!listening) formErrors.listening = "Vui lòng chọn một lựa chọn.";
@@ -35,7 +39,6 @@ const Survey = () => {
         setErrors(formErrors);
 
         if (Object.keys(formErrors).length === 0) {
-            // If there are no errors, navigate to the next page
             console.log("Form is valid. Proceed with submission.");
             navigate("/TestInput");
         }
@@ -51,10 +54,8 @@ const Survey = () => {
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    style={errors.email ? { borderColor: "red" } : {}}
-                />
-                {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
-
+                        style={errors.email ? { borderColor: "red" } : {}}/>
+{errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
                 <h3>2. Bạn học tiếng Hàn vì mục tiêu gì? (Có thể chọn nhiều lựa chọn)</h3>
                 <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: '500px', marginLeft: '170px' }}>
                     {["Du Học", "Làm Việc", "Du Lịch", "Kết Hôn Với Người Hàn", "Sở Thích Cá Nhân", "Lý Do Khác"].map((label, index) => (
