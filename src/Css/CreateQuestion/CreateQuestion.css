@@ -1,0 +1,70 @@
+/* Căn giữa form và thêm khoảng cách xung quanh */
+.question-form-container {
+    max-width: 800px; /* Tăng kích thước tối đa của form */
+    margin: 0 auto;
+    padding: 30px; /* Thêm padding để tạo khoảng cách xung quanh */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Định dạng các thẻ tiêu đề */
+.question-form-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; /* Tăng kích thước chữ tiêu đề */
+}
+
+/* Định dạng các label */
+.question-form-container label {
+    display: block;
+    margin: 20px 0 10px; /* Thêm khoảng cách trên và dưới */
+    font-weight: bold;
+    color: #555;
+    font-size: 18px; /* Tăng kích thước chữ cho label */
+}
+
+/* Định dạng input và textarea */
+.question-form-container input[type="text"],
+.question-form-container textarea {
+    width: 100%;
+    padding: 15px; /* Tăng padding để nhập dữ liệu lớn hơn */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px; /* Tăng kích thước chữ trong input và textarea */
+    transition: border-color 0.3s ease;
+}
+
+/* Định dạng input khi có lỗi */
+.question-form-container input[type="text"].error {
+    border-color: #dc3545;
+}
+
+/* Định dạng nút gửi */
+.question-form-container button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Tăng padding cho nút gửi */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px; /* Tăng kích thước chữ trên nút gửi */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px; /* Thêm khoảng cách trên nút gửi */
+    margin-left: 5px;
+}
+
+/* Hiệu ứng hover cho nút gửi */
+.question-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Hiệu ứng nhấn nút gửi */
+.question-form-container button[type="submit"]:active {
+    transform: scale(0.98);
+}
