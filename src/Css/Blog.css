@@ -48,7 +48,7 @@ h1 {
 .course-item::before {
   content: "";
   display: block;
-  padding-top: 56.25%; /* Tỷ lệ khung hình 16:9 */
+  padding-top: 56.25%;
   background-size: cover;
   background-position: center;
 }
@@ -94,7 +94,6 @@ h1 {
   color: #FF0000;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .course-list {
     grid-template-columns: 1fr;

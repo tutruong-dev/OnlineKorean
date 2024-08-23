@@ -7,7 +7,7 @@
 }
 .container{
     position: relative;
-    width: 100vw; /* Chiều rộng 100% màn hình */
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
