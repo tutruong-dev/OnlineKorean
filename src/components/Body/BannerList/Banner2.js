@@ -15,7 +15,7 @@ const Banner2 = () => {
           <li><i className="fas fa-check"></i> Viết</li>
           <li><i className="fas fa-check"></i> Topik</li>
         </ul>
-        <a href="/khoa-hoc" className="discover-link">Khám Phá Khóa Học</a> {/* Cập nhật href Toi Trang Khóa Học */}
+        <a href="/Khóa-Học" className="discover-link">Khám Phá Khóa Học</a> {/* Cập nhật href Toi Trang Khóa Học */}
       </div>
     </div>
   );
