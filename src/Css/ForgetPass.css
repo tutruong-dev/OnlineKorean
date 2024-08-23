@@ -91,7 +91,9 @@
 
 .btn-primary {
    /* Primary Button Blue */
-  border: none;
+   height: 35px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .btn-primary:hover {

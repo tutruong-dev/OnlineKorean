@@ -1,0 +1,29 @@
+.curriculum {
+  position: relative;
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 83px;
+}
+.curriculum-wrapper {
+  border-radius: 0 var(--br-xl) 0 0;
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  border-left: 1px solid var(--light-grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-24xl);
+  text-align: left;
+  font-size: var(--heading-h4-size);
+  color: var(--black);
+  font-family: var(--heading-h4);
+}
+@media screen and (max-width: 450px) {
+  .curriculum {
+    font-size: var(--p2-size);
+    line-height: 19px;
+  }
+}

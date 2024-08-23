@@ -1,0 +1,45 @@
+.nh-gi {
+  position: relative;
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 83px;
+}
+.star-rating {
+  align-self: stretch;
+  gap: var(--gap-3xs);
+  font-size: var(--p-size);
+  font-family: var(--p);
+}
+.nh-gi-parent,
+.sidebar-courses-listing,
+.star-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.nh-gi-parent {
+  align-self: stretch;
+  gap: var(--gap-xl);
+}
+.sidebar-courses-listing {
+  width: 270px;
+  gap: var(--gap-11xl);
+  text-align: left;
+  font-size: var(--heading-h4-size);
+  color: var(--black);
+  font-family: var(--heading-h4);
+}
+@media screen and (max-width: 850px) {
+  .sidebar-courses-listing {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nh-gi {
+    font-size: var(--p2-size);
+    line-height: 19px;
+  }
+}

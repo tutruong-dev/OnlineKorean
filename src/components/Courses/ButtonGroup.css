@@ -1,0 +1,13 @@
+.button-group {
+  align-self: stretch;
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--space-400);
+  text-align: left;
+  font-size: var(--p2-size);
+  color: var(--white);
+  font-family: var(--single-line-body-base);
+}

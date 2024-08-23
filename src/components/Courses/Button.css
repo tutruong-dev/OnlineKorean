@@ -1,0 +1,32 @@
+.star-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 16px;
+}
+.button1 {
+  position: relative;
+  line-height: 100%;
+  display: inline-block;
+  min-width: 63px;
+}
+.button {
+  margin-top: -3px;
+  flex: 1;
+  border-radius: var(--radius-200);
+  background-color: var(--color-cornflowerblue);
+  border: 1px solid var(--white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  gap: var(--space-200);
+  text-align: left;
+  font-size: var(--p2-size);
+  color: var(--white);
+  font-family: var(--single-line-body-base);
+}

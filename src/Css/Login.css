@@ -127,20 +127,21 @@
 }
 
 .login-content-form-content .btn-primary {
-    width: 100%;
+    width: 40%;
     padding: 10px;
-    background-color: #6a00ff;
+    background-color: #006aff;
     border: none;
     border-radius: 4px;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 180px;
 }
 
 
 
 .login-content-form-content .ForgetPass {
-    text-align: right;
     margin-top: 10px;
+    text-decoration: none;
 }

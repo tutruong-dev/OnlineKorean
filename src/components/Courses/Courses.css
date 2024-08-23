@@ -1,0 +1,212 @@
+.image-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-xl) var(--br-xl) 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.photography {
+  position: relative;
+  line-height: 150%;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 39px;
+}
+.image,
+.photography-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.photography-wrapper {
+  border-radius: var(--br-5xs);
+  background-color: var(--black);
+  padding: var(--padding-5xs) var(--padding-xs);
+  z-index: 1;
+}
+.image {
+  align-self: stretch;
+  height: 292px;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.by-determined-poitras {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 93px;
+}
+.create-an-lms {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--heading-h4-size);
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: var(--heading-h4);
+  color: var(--black);
+}
+.by-determined-poitras-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.component-2-icon2 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-2-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.home {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 45px;
+}
+.home1,
+.icon6 {
+  position: relative;
+  display: none;
+}
+.home1 {
+  width: 50px;
+  font-size: var(--p-size);
+  line-height: 150%;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--heading-h4);
+  color: var(--black);
+}
+.icon6 {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.times {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.home2 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 92px;
+}
+.meta {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.line {
+  align-self: stretch;
+  height: 1px;
+  position: relative;
+  background-color: var(--light-grey);
+}
+.div,
+.free,
+.view-more {
+  position: relative;
+  line-height: 150%;
+}
+.div {
+  text-decoration: line-through;
+  display: inline-block;
+  min-width: 84px;
+}
+.free,
+.view-more {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: var(--heading-h4);
+}
+.free {
+  color: var(--green);
+  display: inline-block;
+  min-width: 85px;
+}
+.view-more {
+  width: 91px;
+  color: var(--black);
+  white-space: pre-wrap;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.content1,
+.courses1,
+.price-parent {
+  display: flex;
+  align-items: flex-start;
+}
+.price-parent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--p-size);
+  color: var(--grey);
+}
+.content1,
+.courses1 {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content1 {
+  align-self: stretch;
+  padding: var(--padding-xl);
+  gap: var(--gap-base);
+  color: var(--dark-gray);
+  font-family: var(--p);
+}
+.courses1 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--light-grey);
+  box-sizing: border-box;
+  min-width: 313px;
+  max-width: 100%;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--p2-size);
+  color: var(--white);
+  font-family: var(--heading-h4);
+}
+@media screen and (max-width: 450px) {
+  .create-an-lms {
+    font-size: var(--p2-size);
+    line-height: 19px;
+  }
+  .price-parent {
+    flex-wrap: wrap;
+  }
+}

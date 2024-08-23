@@ -1,0 +1,122 @@
+.homepage,
+.icon {
+  position: relative;
+}
+.homepage {
+  line-height: 150%;
+  display: inline-block;
+  min-width: 71px;
+}
+.icon {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.course,
+.the-ultimate-guide {
+  position: relative;
+  line-height: 150%;
+}
+.course {
+  display: inline-block;
+  min-width: 68px;
+}
+.the-ultimate-guide {
+  font-family: var(--heading-h4);
+  color: var(--grey);
+}
+.breakcrumb,
+.content,
+.text {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 799px 0 0;
+  gap: var(--gap-5xs);
+}
+.breakcrumb,
+.content {
+  align-self: stretch;
+  flex-direction: column;
+}
+.breakcrumb {
+  background-color: var(--white-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-xl);
+}
+.content {
+  padding: 0 0 var(--padding-71xl);
+  text-align: left;
+  font-size: var(--p2-size);
+  color: var(--dark-gray);
+  font-family: var(--p);
+}
+.content,
+.course-details,
+.course-single {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.course-details {
+  flex: 1;
+  background-color: var(--white);
+  flex-direction: column;
+  max-width: 100%;
+}
+.course-single {
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1525px) {
+  .text {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .content,
+  .text {
+    box-sizing: border-box;
+  }
+  .text {
+    padding-right: 399px;
+  }
+  .content {
+    padding-bottom: var(--padding-39xl);
+  }
+  .course-single {
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .content,
+  .text {
+    box-sizing: border-box;
+  }
+  .text {
+    padding-right: 199px;
+  }
+  .content {
+    padding-bottom: 38px;
+  }
+  .course-single {
+    gap: var(--gap-21xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .text {
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

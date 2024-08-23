@@ -1,0 +1,40 @@
+.component-2-icon6 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home4 {
+  flex: 1;
+  line-height: 150%;
+}
+.home4,
+.home5,
+.icon8 {
+  position: relative;
+}
+.home5 {
+  line-height: 150%;
+  display: inline-block;
+  min-width: 19px;
+}
+.icon8 {
+  height: 16px;
+  width: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.cate-4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+  text-align: left;
+  font-size: var(--p-size);
+  color: var(--dark-gray);
+  font-family: var(--p);
+}

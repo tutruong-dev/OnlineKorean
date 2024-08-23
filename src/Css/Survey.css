@@ -1,0 +1,56 @@
+/* Survey Container */
+.survey-container {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center;
+    width: 100%; /* Full width to allow responsiveness */
+    max-width: 800px; /* Maximum width the container should have */
+    height: auto;
+    padding: 20px; /* Adding some padding to ensure the content doesn't touch the edges */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+/* Questions Section */
+.questions h3 {
+    background-color: #F2F3F5;
+    padding: 10px; /* Add some padding for better spacing */
+    margin: 20px 0; /* Space out the headers */
+}
+
+.questions input[type="email"],
+.questions input[type="reason"] {
+    width: 100%; /* Make the inputs responsive */
+    max-width: 450px; /* Maximum width for the email input */
+    height: 50px; /* Uniform height for the inputs */
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+/* Adjustments for Reason Input */
+.questions input[type="reason"] {
+    max-width: 900px; /* Set a maximum width for the reason input */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form Group Header */
+.form-group h3 {
+    background-color: #F2F3F5;
+    padding: 10px; /* Add padding for better spacing */
+    margin: 20px 0; /* Space out the headers */
+}
+
+/* Button Container */
+.buttonSurvey-container {
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px auto; /* Center the button and add margin above and below */
+    display: block; /* Ensure the button takes full width of the container */
+    max-width: 200px; /* Limit the maximum width of the button */
+}

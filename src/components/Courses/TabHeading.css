@@ -1,0 +1,42 @@
+.tng-quan {
+  position: relative;
+  line-height: 120%;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 101px;
+}
+.tab-header-items {
+  border-radius: var(--br-xl) 0 0 0;
+  background-color: var(--white-grey);
+  border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  border-left: 1px solid var(--light-grey);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-15xl);
+  white-space: nowrap;
+}
+.line1 {
+  align-self: stretch;
+  width: 1px;
+  position: relative;
+  background-color: var(--light-grey);
+  flex-shrink: 0;
+  display: none;
+}
+.tab-heading {
+  border-radius: var(--br-xl) var(--br-xl) 0 0;
+  border: 1px solid var(--light-grey);
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--heading-h4-size);
+  color: var(--color-cornflowerblue);
+  font-family: var(--heading-h4);
+}

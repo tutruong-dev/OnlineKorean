@@ -1,0 +1,12 @@
+.pagination {
+  width: 288px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--p-size);
+  color: var(--color-main);
+  font-family: var(--heading-h4);
+}

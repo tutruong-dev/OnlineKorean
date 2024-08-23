@@ -1,0 +1,32 @@
+.placehoder {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  max-width: 100%;
+}
+.icon16 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.button2 {
+  width: 850px;
+  border-radius: var(--br-5xs);
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-mini) var(--padding-52xl);
+  gap: var(--gap-3xs);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--p-size);
+  color: var(--grey);
+  font-family: var(--p);
+}

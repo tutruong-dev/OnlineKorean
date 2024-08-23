@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../index.css';
-import FAQs from '../Img/FAOs-img.png'
+import FAQs from '../Img/FAOsimg.png'
 function FAQ() {
     return (
         <div className="FAOs-container">
@@ -69,9 +69,9 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="FAOs-content-image">
+                        <div className="FAOs-content-image">
                         <img src={FAQs} alt="FAOs illustration" />
+                    </div>
                     </div>
                 </div>
             </div>

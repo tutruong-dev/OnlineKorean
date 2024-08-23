@@ -10,6 +10,11 @@ import FAQsPages from './pages/FAQsPage';
 import LoginPages from './pages/LoginPage';
 import ForgetPass from './components/Login_Logout/ForgetPass';
 import RegisterPage from './pages/RegisterPage';
+import TestPages from './pages/TestPage';
+import ContactPages from './pages/ContactPage';
+import Surveys from './components/Survey';
+// import CourseSingle from "./pages/CourseSingle";
+import CourseListing from "./pages/CourseListing";
 const App = () => (
   <Router>
     <Header />
@@ -24,8 +29,11 @@ const App = () => (
       <Route path="/Đăng-Ký" element={<RegisterPage />} />
       <Route path="/Login" element={<LoginPages />} />
       <Route path="/Register" element={<RegisterPage />} />
-     {/*<Route path="/Đăng-Ký" element={<Registe />} />
-      <Route path="/Đăng-Nhập" element={<Login />} />
+      <Route path="/Test-Đầu-Vào" element={<TestPages />} />
+      <Route path="/Liên-Hệ-Với-Chúng-Tôi" element={<ContactPages />} />
+      <Route path="/Kiểm Tra Trình Độ" element={<Surveys />} />
+      <Route path="/Khóa-Học" element={<CourseListing />} />
+     {/*<Route path="//Kiểm Tra Trình Độ" element={<Registe />} />
       {/* có thể thêm các route khác ở đây */}
     </Routes>
     <Footer />

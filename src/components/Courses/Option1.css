@@ -1,0 +1,51 @@
+.component-2-icon5,
+.component-3-icon {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.component-3-icon {
+  min-height: 16px;
+}
+.star {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-75xl) 0 0;
+  gap: var(--gap-9xs);
+}
+.div2,
+.div3 {
+  position: relative;
+  line-height: 150%;
+}
+.div2 {
+  align-self: stretch;
+  width: 69px;
+  display: none;
+  align-items: center;
+}
+.div3 {
+  color: var(--dark-gray);
+  display: inline-block;
+  min-width: 56px;
+}
+.option-5,
+.text2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.option-5 {
+  align-self: stretch;
+  text-align: left;
+  font-size: var(--p-size);
+  color: var(--black);
+  font-family: var(--p);
+}

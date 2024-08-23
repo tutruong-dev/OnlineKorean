@@ -1,0 +1,71 @@
+.homepage1 {
+  position: relative;
+  line-height: 150%;
+  color: var(--dark-gray);
+  display: inline-block;
+  min-width: 71px;
+}
+.icon2 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) 0 0;
+}
+.course1 {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 68px;
+}
+.component-2-icon1 {
+  height: 16px;
+  width: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.the-ultimate-guide1 {
+  align-self: stretch;
+  width: 365px;
+  position: relative;
+  line-height: 150%;
+  display: none;
+  max-width: 100%;
+}
+.breakcrumb1,
+.text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.text1 {
+  width: 1290px;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.breakcrumb1 {
+  align-self: stretch;
+  background-color: var(--white-grey);
+  justify-content: center;
+  padding: var(--padding-lg) var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--p2-size);
+  color: var(--grey);
+  font-family: var(--p);
+}
+@media screen and (max-width: 450px) {
+  .text1 {
+    flex-wrap: wrap;
+  }
+}
