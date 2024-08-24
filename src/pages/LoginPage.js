@@ -7,5 +7,6 @@ const LoginPages = () => {
         <Login />
       </div>
     );
-  };
-  export default LoginPages;
+}
+
+export default LoginPages;

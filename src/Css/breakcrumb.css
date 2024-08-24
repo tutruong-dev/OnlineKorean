@@ -11,9 +11,9 @@
   color: #007bff;
 }
 
-.breadcrumb-item a {
+.breadcrumb-item p {
   text-decoration: none;
-  color: #007bff;
+  color: #a1a1a1;
 }
 
 .breadcrumb-item a:hover {

@@ -1,6 +1,7 @@
 .body_Contact{
     display: flex;
     flex: 1;
+    margin-top: 0px;
   }
   .sideBar, .mainContent{
     display: flex;

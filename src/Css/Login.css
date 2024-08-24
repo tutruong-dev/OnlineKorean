@@ -112,7 +112,7 @@
     color: #555;
 }
 
-.login-content-form-content input[type="email"],
+.login-content-form-content input[type="text"],
 .login-content-form-content input[type="password"] {
     width: 100%;
     padding: 10px;
