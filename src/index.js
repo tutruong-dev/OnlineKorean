@@ -18,6 +18,7 @@ import CourseSingle from "./pages/CourseSingle";
 import TestInputPage from "./pages/TestInputPage";
 import QuestionForm from "./components/CreateQuestion/CreateQuestion";
 import CreateCoursePage from "./components/CreateCouses/CreateCouses";
+import BlogPage from "./pages/BlogPage";
 
 const App = () => (
   <Router>
@@ -37,8 +38,8 @@ const App = () => (
       <Route path="/Liên-Hệ-Với-Chúng-Tôi" element={<ContactPages />} />
       <Route path="/Kiểm Tra Trình Độ" element={<Surveys />} />
       <Route path="/Khóa-Học" element={<CourseListing />} />
-      <Route path="/course/:id" element={<CourseSingle />} />{" "}
-      {/* Dynamic course route */}
+      <Route path="/course/:id" element={<CourseSingle />} />
+      <Route path="/Blog" element={<BlogPage />} />
       <Route path="/TestInput" element={<TestInputPage />} />
       <Route path="/Teacher" element={<QuestionForm />} />
       <Route path="/Tất Cả Giáo Viên" element={<CreateCoursePage />} />

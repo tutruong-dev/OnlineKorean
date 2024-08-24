@@ -46,10 +46,8 @@ function ContactForm() {
         setErrors(validationErrors);
 
         if (Object.keys(validationErrors).length === 0) {
-            // Form is valid, proceed with form submission (e.g., send data to server)
             console.log('Form data:', formData);
             alert('Form submitted successfully!');
-            // Reset form fields after successful submission
             setFormData({
                 username: '',
                 email: '',
