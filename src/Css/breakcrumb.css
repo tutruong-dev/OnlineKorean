@@ -1,14 +1,26 @@
-.breakcrumb p {
-    color: black;
-    font-size: 16px;
-    padding: 15px 170px;
-  }
-  .breakcrumb{
-    text-decoration: none;
-  }
-  .breakcrumb{
-    margin-left: -40px;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumb-item {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active a {
+  color: #6c757d;
+  pointer-events: none;
+}

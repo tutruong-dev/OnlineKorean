@@ -2,7 +2,9 @@ import { useMemo } from "react";
 import Cate from "./Cate";
 import PropTypes from "prop-types";
 import "./CATEGORY.css";
-
+import component_2_14 from "../../Img/Courses//component-2-14.svg";
+import component_2_16 from "../../Img/Courses//component-2-16.svg";
+import icon1 from "../../Img/Courses//icon1.svg";
 const CATEGORY = ({
   className = "",
   courseCategory,
@@ -231,28 +233,28 @@ const CATEGORY = ({
           homeFontFamily={homeFontFamily3}
         />
         <div className="cate-5">
-          <img className="component-2-icon7" alt="" src="/component-2-16.svg" />
+          <img className="component-2-icon7" alt="" src={component_2_14} />
           <div className="home6">Academy</div>
           <div className="home7">15</div>
-          <img className="icon9" alt="" src="/icon1.svg" />
+          <img className="icon9" alt="" src={icon1} />
         </div>
         <div className="cate-6">
-          <img className="component-2-icon7" alt="" src="/component-2-14.svg" />
+          <img className="component-2-icon7" alt="" src={component_2_14} />
           <div className="home6">Single family home</div>
           <div className="home7">15</div>
-          <img className="icon9" alt="" src="/icon1.svg" />
+          <img className="icon9" alt="" src={icon1} />
         </div>
         <div className="cate-6">
-          <img className="component-2-icon7" alt="" src="/component-2-14.svg" />
+          <img className="component-2-icon7" alt="" src={component_2_14} />
           <div className="home6">Studio</div>
           <div className="home7">15</div>
-          <img className="icon9" alt="" src="/icon1.svg" />
+          <img className="icon9" alt="" src={icon1} />
         </div>
         <div className="cate-6">
-          <img className="component-2-icon7" alt="" src="/component-2-14.svg" />
+          <img className="component-2-icon7" alt="" src={component_2_14} />
           <div className="home6">University</div>
           <div className="home7">15</div>
-          <img className="icon9" alt="" src="/icon1.svg" />
+          <img className="icon9" alt="" src={icon1} />
         </div>
       </div>
     </div>

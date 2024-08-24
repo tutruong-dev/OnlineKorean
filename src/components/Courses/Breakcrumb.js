@@ -11,7 +11,11 @@ const Breakcrumb = ({ className = "" }) => {
           <img className="icon2" alt="" src="/Img/Courses/icon-1.svg" />
         </div>
         <div className="course1">Khóa Học</div>
-        <img className="component-2-icon1" alt="" src="/Img/Courses/icon-1.svg" />
+        <img
+          className="component-2-icon1"
+          alt=""
+          src="/Img/Courses/icon-1.svg"
+        />
         <div className="the-ultimate-guide1">
           The Ultimate Guide To The BestWordPress LMS Plugin
         </div>

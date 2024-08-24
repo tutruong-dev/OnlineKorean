@@ -1,12 +1,39 @@
 .pagination {
-  width: 288px;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-xs);
-  text-align: left;
-  font-size: var(--p-size);
-  color: var(--color-main);
-  font-family: var(--heading-h4);
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-item,
+.arrow {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.page-item {
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.page-item.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.arrow:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }

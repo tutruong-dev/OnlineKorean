@@ -1,4 +1,3 @@
-// src/TestInput.js
 import React, { useState, useEffect } from 'react';
 import { db, collection, getDocs } from '../components/Firebase/firebaseconfig';
 
@@ -31,32 +30,45 @@ const TestInput = () => {
   };
 
   const calculateResults = () => {
-    let topik = 0;
-    const totalQuestions = questions.length; // 10 câu hỏi
-    const numParts = 2; // 2 phần
-    const questionsPerPart = totalQuestions / numParts; // 5 câu hỏi mỗi phần
-    let correctCounts = Array(numParts).fill(0);
-    let totalCounts = Array(numParts).fill(0);
-  
-    questions.forEach(q => {
-      const partIndex = Math.floor((q.id - 1) / questionsPerPart); // Chia phần
-      console.log(`Question ID: ${q.id}, Answer: ${answers[q.id]}, Correct Answer: ${q.correctAnswer}`); // Debugging
-  
-      if (answers[q.id] === q.correctAnswer) {
-        correctCounts[partIndex]++;
+    const correctCounts = {
+      part1: 0,
+      part2: 0,
+      part3: 0
+    };
+
+    const part1Questions = [1, 2, 3, 4];
+    const part2Questions = [5, 6, 7, 8];
+    const part3Questions = [9, 10, 11, 12];
+
+    part1Questions.forEach(id => {
+      if (answers[id] === questions.find(q => q.id === id)?.correctAnswer) {
+        correctCounts.part1++;
       }
-      totalCounts[partIndex]++;
     });
-  
-    for (let i = 0; i < numParts; i++) {
-      const percentage = (correctCounts[i] / totalCounts[i]) * 100;
-      console.log(`Part ${i + 1}: ${correctCounts[i]} correct out of ${totalCounts[i]} total - Percentage: ${percentage}%`); // Debugging
-      if (percentage >= 60) {
-        topik++;
+
+    part2Questions.forEach(id => {
+      if (answers[id] === questions.find(q => q.id === id)?.correctAnswer) {
+        correctCounts.part2++;
       }
+    });
+
+    part3Questions.forEach(id => {
+      if (answers[id] === questions.find(q => q.id === id)?.correctAnswer) {
+        correctCounts.part3++;
+      }
+    });
+
+    const { part1, part2, part3 } = correctCounts;
+    
+    if (part1 >= 4 && part2 >= 4 && part3 >= 4) {
+      return 3;
+    } else if (part1 >= 4 && part2 >= 4) {
+      return 2;
+    } else if (part1 >= 4) {
+      return 1; 
+    } else {
+      return 0; 
     }
-  
-    return topik;
   };
 
   const handleSubmit = () => {
@@ -65,7 +77,7 @@ const TestInput = () => {
   };
 
   return (
-    <div className="input-survey-container">
+    <div className="input-Test-container">
       <h1>Bài test đầu vào</h1>
       <div className="test-questions">
         {questions.map(q => (
@@ -90,7 +102,7 @@ const TestInput = () => {
           </div>
         ))}
         <button className="testinput-button-container" onClick={handleSubmit}>
-          Hoàn Thành Khảo Sát
+          Hoàn Thành Bài Test
         </button>
       </div>
     </div>

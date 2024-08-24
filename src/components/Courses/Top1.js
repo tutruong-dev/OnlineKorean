@@ -1,5 +1,5 @@
 import Meta from "./Meta";
-import Sidebar from "./Sidebar";
+import Sidebar1 from "./Sidebar1";
 import PropTypes from "prop-types";
 import "./Top1.css";
 
@@ -15,7 +15,7 @@ const Top1 = ({ className = "" }) => {
         </div>
         <h1 className="kha-hc-s">Khóa học sơ cấp cho người mới bắt đầu</h1>
         <Meta />
-        <Sidebar />
+        <Sidebar1 />
       </div>
     </div>
   );

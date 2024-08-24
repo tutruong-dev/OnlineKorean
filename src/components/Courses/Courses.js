@@ -1,6 +1,8 @@
-import { useMemo } from "react";
+import React, { useMemo } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./Courses.css";
+import component_2 from "../../Img/Courses/component-2.svg";
 
 const Courses = ({
   className = "",
@@ -18,6 +20,7 @@ const Courses = ({
   propDisplay1,
   propAlignSelf1,
   propWidth1,
+  id, // Add an ID prop to identify the course
 }) => {
   const frameDivStyle = useMemo(() => {
     return {
@@ -51,7 +54,7 @@ const Courses = ({
   }, [propMinWidth1, propDisplay1, propAlignSelf1, propWidth1]);
 
   return (
-    <div className={`courses1 ${className}`}>
+    <Link to={`/course/${id}`} className={`courses1 ${className}`}>
       <div className="image">
         <img className="image-child" alt="" src={rectangle139} />
         <div className="photography-wrapper" style={frameDivStyle}>
@@ -68,27 +71,19 @@ const Courses = ({
         <div className="meta">
           <div className="times">
             <div className="component-2-wrapper">
-              <img
-                className="component-2-icon2"
-                alt=""
-                src="/component-21.svg"
-              />
+              <img className="component-2-icon2" alt="" src={component_2} />
             </div>
             <div className="home">2 Tuần</div>
             <div className="home1">Home</div>
-            <img className="icon6" alt="" src="/component-2.svg" />
+            <img className="icon6" alt="" src={component_2} />
           </div>
           <div className="times">
             <div className="component-2-wrapper">
-              <img
-                className="component-2-icon2"
-                alt=""
-                src="/component-2-1.svg"
-              />
+              <img className="component-2-icon2" alt="" src={component_2} />
             </div>
             <div className="home2">156 Học viên</div>
             <div className="home1">Home</div>
-            <img className="icon6" alt="" src="/component-2.svg" />
+            <img className="icon6" alt="" src={component_2} />
           </div>
         </div>
         <div className="line" />
@@ -102,7 +97,7 @@ const Courses = ({
           <div className="view-more">{`Xem Thêm   `}</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -111,6 +106,7 @@ Courses.propTypes = {
   rectangle139: PropTypes.string,
   photography: PropTypes.string,
   prop: PropTypes.string,
+  id: PropTypes.string.isRequired, // ID is required
 
   /** Style props */
   propHeight: PropTypes.any,
