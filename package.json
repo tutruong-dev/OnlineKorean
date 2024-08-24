@@ -8,16 +8,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-<<<<<<< HEAD
-    "firebase": "10.13",
-    "formik": "^2.4.6",
-    "lodash-es": "^4.17.21",
-=======
     "express": "^4.19.2",
     "firebase": "^10.13.0",
     "firebase-admin": "^12.4.0",
     "multer": "^1.4.5-lts.1",
->>>>>>> 22aa815ddb614a42553fdf4068fad8cbd1c6b8fe
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-calendar": "^5.0.0",
