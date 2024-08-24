@@ -12,7 +12,7 @@ function Blog() {
       title: "Khóa Giao Tiếp Tiếng Hàn",
       date: "24, 2023",
       description: "Cung cấp kiến thức căn bản về tiếng Hàn giao tiếp.",
-      imageUrl: hocImage // Sử dụng biến đã import
+      imageUrl: hocImage
     },
     {
       title: "Khóa Luyện Nói Sơ Cấp",
