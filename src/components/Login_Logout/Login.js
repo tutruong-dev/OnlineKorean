@@ -59,7 +59,9 @@ function Login() {
                                     />
                                     <label htmlFor="exampleCheck1">Lưu mật khẩu</label>                                    
                                 </div>                                
-                                <button type="submit" className="btn-primary">Đăng nhập</button>
+                                <button type="submit" className="btn-primary">
+                                    <Link to="/Home-Page" className="login">Đăng nhập</Link>
+                                </button>
                                 <div className="ForgetPass">
                                 <Link to="/ForgetPass">Quên Mật Khẩu</Link>
                                 </div>                      

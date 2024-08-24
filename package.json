@@ -8,13 +8,9 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
-<<<<<<< HEAD
-    "firebase": "10.13.0",
+    "firebase": "10.13",
     "formik": "^2.4.6",
     "lodash-es": "^4.17.21",
-=======
-    "firebase": "^10.13.0",
->>>>>>> 6cd30862a40dab080f0b9859effc90566ded6806
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-calendar": "^5.0.0",

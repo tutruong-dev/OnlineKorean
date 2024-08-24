@@ -1,7 +1,6 @@
 import React, { useState } from 'react'; 
 import Register from '../components/Login_Logout/Register';
-import { db } from '../config';
-import { collection, addDoc } from "firebase/firestore"; 
+import { db, collection, addDoc } from '../components/Firebase/firebaseconfig';
 
 function RegisterPage (){
   const [users, setUsers] = useState([]);
