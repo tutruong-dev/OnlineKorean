@@ -6,6 +6,11 @@
   justify-content: center;
 }
 
+.course-body h3{
+  width: 100%;
+  margin: 0%;
+}
+
 .course-card {
   border: 1px solid #ddd;
   border-radius: 10px;
